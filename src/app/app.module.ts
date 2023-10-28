@@ -19,6 +19,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

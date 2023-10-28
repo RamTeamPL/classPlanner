@@ -16,6 +16,8 @@
     display: inline-block;
     padding-top: 7px;
 
+    cursor: pointer;
+    display: inline-block;
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
 }
