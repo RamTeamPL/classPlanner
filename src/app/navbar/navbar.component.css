@@ -15,6 +15,9 @@
     height: 62px;
     display: inline-block;
     padding-top: 7px;
+
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 img{

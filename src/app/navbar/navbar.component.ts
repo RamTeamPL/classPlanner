@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  centered = false;
+  disabled = false;
+  unbounded = false;
 
+  color = "rgba(128, 128, 128, 0.296)";
 }

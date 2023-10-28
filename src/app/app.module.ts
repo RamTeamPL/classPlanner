@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MatRippleModule} from '@angular/material/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -35,12 +35,13 @@ import { TripsComponent } from './trips/trips.component';
     NotesComponent,
     NotificationsComponent,
     FundraisersComponent,
-    TripsComponent
+    TripsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
