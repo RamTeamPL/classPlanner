@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-
+  centered = false;
+  disabled = false;
+  unbounded = false;
+  color = "rgba(114, 114, 114, 0.495)";
 }
