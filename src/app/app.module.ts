@@ -36,7 +36,7 @@ import { TripsComponent } from './trips/trips.component';
     NotesComponent,
     NotificationsComponent,
     FundraisersComponent,
-    TripsComponent
+    TripsComponent,
   ],
   imports: [
     BrowserModule,

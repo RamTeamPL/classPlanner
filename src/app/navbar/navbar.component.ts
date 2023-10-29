@@ -8,7 +8,6 @@ import { RouterLinkActive } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
   centered = false;
   disabled = false;
   unbounded = false;
