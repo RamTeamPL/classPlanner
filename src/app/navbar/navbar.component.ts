@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLinkActive } from '@angular/router';
 
 
 @Component({
@@ -10,5 +11,5 @@ export class NavbarComponent {
   centered = false;
   disabled = false;
   unbounded = false;
-  color = "rgba(128, 128, 128, 0.296)";
+  color = "rgba(114, 114, 114, 0.495)"; 
 }
