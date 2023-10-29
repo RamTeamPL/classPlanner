@@ -1,0 +1,14 @@
+#error404{
+    text-align: center;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 60px;
+}
+p{
+    font-size: 15px;
+}
