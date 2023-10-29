@@ -18,6 +18,7 @@
 
     cursor: pointer;
     display: inline-block;
+
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -29,3 +30,8 @@ img{
 }
 
 p{color: white; text-align: center;}
+
+.active-link{
+    background-color: rgb(40, 40, 40);
+}
+
