@@ -1,38 +1,42 @@
 <div id = 'nav-box'>
-        <div class = 'nav-element' routerLink=""
+        <div class = 'nav-element' routerLink="" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}"
             matRipple
             [matRippleCentered]="centered"
             [matRippleDisabled]="disabled"
             [matRippleUnbounded]="unbounded"
             [matRippleRadius]="100"
             [matRippleColor]="color">
-            <p><img src="assets/img/icons8-home-96.png" alt="home">Start</p>
+            <p><img src="assets/img/icons8-home-96.png" alt="home" id="dashboard">Start</p>
         </div>
-        <div class = 'nav-element' routerLink="notes"
+        <div class = 'nav-element' routerLink="notes" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}"
             matRipple
             [matRippleCentered]="centered"
             [matRippleDisabled]="disabled"
             [matRippleUnbounded]="unbounded"
             [matRippleRadius]="100"
             [matRippleColor]="color">
-            <p><img src="assets/img/icons8-open-book-100.png" alt="notes">Notatki</p>
+            <p><img src="assets/img/icons8-open-book-100.png" alt="notes" id="notes">Notatki</p>
         </div>
-        <div class = 'nav-element' routerLink="chat"
+        <div class = 'nav-element' routerLink="chat" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}"
             matRipple
             [matRippleCentered]="centered"
             [matRippleDisabled]="disabled"
             [matRippleUnbounded]="unbounded"
             [matRippleRadius]="100"
             [matRippleColor]="color">
-            <p><img src="assets/img/icons8-chat-96.png" alt="chat">Czat</p>
+            <p><img src="assets/img/icons8-chat-96.png" alt="chat" id="chat">Czat</p>
         </div>
-        <div class = 'nav-element' routerLink="treasurer"
+        <div class = 'nav-element' routerLink="treasurer" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}"
             matRipple
             [matRippleCentered]="centered"
             [matRippleDisabled]="disabled"
             [matRippleUnbounded]="unbounded"
             [matRippleRadius]="100"
             [matRippleColor]="color">
-            <p><img src="assets/img/icons8-money-100.png" alt="more">Skarbnik</p>   
+            <p><img src="assets/img/icons8-money-100.png" alt="more" id="treasurer">Skarbnik</p>   
         </div>
 </div>
