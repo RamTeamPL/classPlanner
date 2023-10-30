@@ -12,6 +12,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
+import { EachComponent } from './announcements/each/each.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,10 @@ const routes: Routes = [
       {
         path: 'fundraisers',
         component: FundraisersComponent
+      },
+      {
+        path: 'each',
+        component: EachComponent
       },
       {
         path: 'error',

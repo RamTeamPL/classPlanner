@@ -18,6 +18,7 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+import { EachComponent } from './announcements/each/each.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { TripsComponent } from './trips/trips.component';
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
+    EachComponent,
   ],
   imports: [
     BrowserModule,
