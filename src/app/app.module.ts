@@ -18,6 +18,7 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { TripsComponent } from './trips/trips.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatRippleModule
+    MatRippleModule,
+    [MatExpansionModule],
   ],
   providers: [],
   bootstrap: [AppComponent]
