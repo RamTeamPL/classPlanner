@@ -1,0 +1,41 @@
+#container{
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(106, 213, 215, 0.982);
+    z-index: 1;
+    padding: 1%;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    text-align: center;
+    border: 1px black solid;
+    overflow: hidden;
+}
+
+img{
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+input[type='text']{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type='file']{
+    
+}
+
+@keyframes slide{
+    from{height: 0px;}
+    to{height: 500px;}
+}
