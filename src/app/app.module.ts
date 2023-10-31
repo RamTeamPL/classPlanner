@@ -45,7 +45,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatRippleModule,
-    [MatExpansionModule]
+    [MatExpansionModule],
   ],
   providers: [],
   bootstrap: [AppComponent]
