@@ -1,0 +1,94 @@
+#bgacc
+{
+    border-top: 4px solid rgba(6, 94, 83, 0.912);
+    height: 400px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    background-color: rgb(0, 0, 74, 85%);
+    border-radius: 8px;
+    border-bottom: 4px solid rgba(78, 106, 206, 0.5);
+}
+
+img.profileimg
+{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.user
+{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    background-color: rgba(0, 0, 150, 0.83);
+}
+
+div.allinfo
+{
+    color: rgb(221, 221, 221);
+    font-size: 16px;
+}
+
+div.firstname
+{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(78, 106, 206, 0.866);
+}
+
+div.firstname > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+div.lastname
+{
+    margin-top: 3px;
+    padding: 10px;
+    background-color: rgba(7, 58, 71, 0.912);
+}
+
+div.lastname > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+div.class
+{
+    margin-top: 3px;
+    padding: 10px;
+    background-color: rgba(78, 106, 206, 0.866);
+}
+
+div.class > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+div.mail
+{
+    font-size: 14px;
+    margin-top: 3px;
+    padding: 8px;
+    background-color: rgb(7, 58, 71, 0.912);
+
+    
+}
+
+div.mail > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+
+
