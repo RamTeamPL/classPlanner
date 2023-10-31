@@ -1,13 +1,12 @@
-<div class="box" routerLink="/each"
+<div class="box" routerLink="/each" *ngFor="let announce of announces"
     matRipple
     [matRippleCentered]="centered"
     [matRippleDisabled]="disabled"
     [matRippleUnbounded]="unbounded"
     [matRippleRadius]="400"
     [matRippleColor]="color">
-    <h3>Ogloszenia</h3>
+    <h3>{{announce.tytul}}</h3>
     <ul>
-        <li>Ogloszenia/Ogłoszenia</li>
-        <li>Ogloszenia/Ogłoszenia</li>
+        <p>{{ announce.tresc | truncate:50 }}</p>
     </ul>
 </div>

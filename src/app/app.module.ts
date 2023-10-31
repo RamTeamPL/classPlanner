@@ -19,6 +19,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 import { EachComponent } from './announcements/each/each.component';
+import { TruncatePipe } from './announcements/pipes/truncate.pipe';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { EachComponent } from './announcements/each/each.component';
     FundraisersComponent,
     TripsComponent,
     EachComponent,
+    TruncatePipe,
   ],
   imports: [
     BrowserModule,
