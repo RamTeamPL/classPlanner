@@ -19,7 +19,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import { AddNoteComponent } from './add-note/add-note.component';
 
 
 @NgModule({
@@ -39,7 +39,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
-    
+    AddNoteComponent
     
   ],
   imports: [
@@ -48,6 +48,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     BrowserAnimationsModule,
     MatRippleModule,
     [MatExpansionModule],
+    
     
   ],
   providers: [],
