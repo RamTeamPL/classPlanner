@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class NotesComponent {
   panelOpenState = true;
+
+  color = "rgba(114, 114, 114, 0.495)"
 }

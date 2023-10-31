@@ -1,3 +1,4 @@
+<router-outlet></router-outlet>
 <div id="container">
     <mat-accordion>
         <mat-expansion-panel hideToggle>
@@ -41,5 +42,12 @@
     </mat-expansion-panel>
     
     </mat-accordion>
-    <div id = "add">+</div>
+    
   </div>
+  <div id = "add" routerLink="addNote"
+    matRipple
+    [matRippleCentered]="true"
+    [matRippleDisabled]="false"
+    [matRippleUnbounded]="false"
+    [matRippleRadius]="20"
+    [matRippleColor]="color">+</div>
