@@ -1,0 +1,30 @@
+
+.box{
+    width: 90%;
+    height: auto;
+    
+    
+    display: block;
+    margin: auto;
+    padding-top: 9px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+}
+
+
+
+
+.add{
+    padding: auto;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 500;
+    position: sticky;
+}
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  } 
