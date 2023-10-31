@@ -18,6 +18,9 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { TripsComponent } from './trips/trips.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    [MatButtonModule, MatDividerModule, MatIconModule],
   ],
   providers: [],
   bootstrap: [AppComponent]
