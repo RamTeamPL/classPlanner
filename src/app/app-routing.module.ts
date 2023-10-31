@@ -13,6 +13,7 @@ import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
+import { LessonComponent } from './lesson/lesson.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
           {
             path: 'addNote',
             component: AddNoteComponent
+          },
+          {
+            path: 'lesson',
+            component: LessonComponent
           },
         ]
       },

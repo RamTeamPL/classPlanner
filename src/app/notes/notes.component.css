@@ -48,3 +48,19 @@
     animation-duration: 5s;
 
 }
+
+.active-add{
+    display: none;
+}
+
+.lesson{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: blue;
+    border-radius: 10px;
+}
+h3{
+    padding: 10px;
+}

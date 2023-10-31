@@ -4,7 +4,7 @@
     margin-left: 4%;
     margin-right: 4%;
     width: 90%;
-    height: 220px;
+    height: 230px;
     border-radius: 20px;
     background-color: rgba(106, 213, 215, 0.982);
     z-index: 1;
@@ -25,7 +25,7 @@ img{
 }
 
 input[type='text']{
-    width: 80%;
+    width: 60%;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -55,7 +55,11 @@ label{
     border-radius: 10px;
 }
 
+label p{
+    padding: 5px;
+}
+
 @keyframes slide{
     from{height: 0px;}
-    to{height: 220px;}
+    to{height: 230px;}
 }
