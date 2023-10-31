@@ -7,11 +7,12 @@
     [matRippleRadius]="10"
     [matRippleColor]="color">
     <h2>Temat lekcji</h2>
+    <form action="" method="get">
     <input type="text" name="subject" id="subject" placeholder="Temat">
     <h2>Zdjęcia</h2>
-    <input type="file" id="file" accept="image/png, image/gif, image/jpeg" multiple>
-    <label for="file">
+    <input type="file" id="photos" name="photos" accept="image/png, image/gif, image/jpeg" multiple>
+    <label for="photos">
         <p>Wybierz zdjęcia</p>
     </label>
-    <input type="button" value="Dodaj">
+    <input type="submit" value="Dodaj"></form>
 </div>
