@@ -20,6 +20,7 @@ import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AddNoteComponent } from './add-note/add-note.component';
+import { LessonComponent } from './lesson/lesson.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { AddNoteComponent } from './add-note/add-note.component';
     FundraisersComponent,
     TripsComponent,
     AddNoteComponent,
+    LessonComponent,
   ],
   imports: [
     BrowserModule,
