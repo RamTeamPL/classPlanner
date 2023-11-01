@@ -20,6 +20,7 @@ import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 import { EachComponent } from './announcements/each/each.component';
 import { TruncatePipe } from './announcements/pipes/truncate.pipe';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { TruncatePipe } from './announcements/pipes/truncate.pipe';
     TripsComponent,
     EachComponent,
     TruncatePipe,
+    AddNoteComponent,
   ],
   imports: [
     BrowserModule,

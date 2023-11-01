@@ -10,3 +10,11 @@
         <p>{{ announce.tresc | truncate:50 }}</p>
     </ul>
 </div>
+
+<div id = "add" routerLink="addNote" routerLinkActive="active-add"
+    matRipple
+    [matRippleCentered]="true"
+    [matRippleDisabled]="false"
+    [matRippleUnbounded]="false"
+    [matRippleRadius]="20"
+    [matRippleColor]="color">+</div>
