@@ -25,17 +25,15 @@ const routes: Routes = [
       },
       {
         path: 'announcements',
-        component: AnnouncementsComponent,
-        children: [
-          {
-            path: 'addNote',
-            component: AddNoteComponent
-          },
-          {
-            path: 'each',
-            component: EachComponent
-          },
-        ]
+        component: AnnouncementsComponent
+      },
+      {
+        path: 'addNote',
+        component: AddNoteComponent
+      },
+      {
+        path: 'each',
+        component: EachComponent
       },
       {
         path: 'chat',
