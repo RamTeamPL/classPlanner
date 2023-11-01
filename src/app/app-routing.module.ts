@@ -13,6 +13,7 @@ import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { EachComponent } from './announcements/each/each.component';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,17 @@ const routes: Routes = [
       },
       {
         path: 'announcements',
-        component: AnnouncementsComponent
+        component: AnnouncementsComponent,
+        children: [
+          {
+            path: 'addNote',
+            component: AddNoteComponent
+          },
+          {
+            path: 'each',
+            component: EachComponent
+          },
+        ]
       },
       {
         path: 'chat',
@@ -61,10 +72,6 @@ const routes: Routes = [
       {
         path: 'fundraisers',
         component: FundraisersComponent
-      },
-      {
-        path: 'each',
-        component: EachComponent
       },
       {
         path: 'error',
