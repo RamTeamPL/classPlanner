@@ -1,3 +1,6 @@
+#container{
+    padding-bottom: 80px;
+}
 .box:first-child{
     margin-top: 5%;
 }
@@ -17,7 +20,8 @@
 h3{
     color: white;
     background-color: rgba(78, 106, 206, 0.866);
-    height: 40px;
+    height: auto;
+    padding: 2px;
     font-size: x-large;
     font-weight: 500;
     display: block;

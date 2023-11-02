@@ -1,0 +1,65 @@
+#container{
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 90%;
+    height: 230px;
+    border-radius: 20px;
+    background-color: rgba(106, 213, 215, 0.982);
+    z-index: 1;
+    padding: 1%;
+    animation-name: slide;
+    animation-duration: 0.2s;
+    text-align: center;
+    border: 1px black solid;
+    overflow: hidden;
+}
+
+img{
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+input[type='text']{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0px 1px 2px black;
+}
+
+input[type="submit"]{
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    box-shadow: inset 0px 1px 2px black;
+    padding: 5px;
+    margin: 10px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    color: white;
+    display: block;
+    width: 130px;
+    height: auto;
+    margin: auto;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+label p{
+    padding: 5px;
+}
+
+@keyframes slide{
+    from{height: 0px;}
+    to{height: 230px;}
+}

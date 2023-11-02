@@ -12,8 +12,12 @@ import { SettingsComponent } from './settings/settings.component';
 import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
+
 import { EachComponent } from './announcements/each/each.component';
 import { AddNoteComponent } from './announcements/add-note/add-note.component';
+
+import { AddNoteComponent } from './add-note/add-note.component';
+import { LessonComponent } from './lesson/lesson.component';
 
 const routes: Routes = [
   {
@@ -61,7 +65,17 @@ const routes: Routes = [
       },
       {
         path: 'notes',
-        component: NotesComponent
+        component: NotesComponent,
+        children: [
+          {
+            path: 'addNote',
+            component: AddNoteComponent
+          },
+          {
+            path: 'lesson',
+            component: LessonComponent
+          },
+        ]
       },
       {
         path: 'trips',
@@ -75,10 +89,10 @@ const routes: Routes = [
         path: 'error',
         component: ErrorComponent
       },
-      {
-        path: '**',
-        redirectTo: 'error'
-      }
+      // {
+      //   path: '**',
+      //   redirectTo: 'error'
+      // }
     ]
   }
 ];
