@@ -6,9 +6,9 @@ import lombok.Setter;
 
 import java.sql.Blob;
 
-@Entity
 @Getter
 @Setter
+@Entity
 @Table(name = "member")
 public class Member {
     @Id
@@ -16,8 +16,6 @@ public class Member {
     int id;
     String name;
     String surname;
-    String nickname;
     String email;
     String password;
-    Blob avatar;
 }

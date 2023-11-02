@@ -24,11 +24,9 @@ public class MemberService {
     @Transactional
     public Member editMember(Member member) {
         Member editedMember = memberRepository.findById(member.getId()).orElseThrow();
-        editedMember.setAvatar(member.getAvatar());
         editedMember.setName(member.getName());
         editedMember.setSurname(member.getSurname());
         editedMember.setPassword(member.getPassword());
-        editedMember.setNickname(member.getNickname());
         return editedMember;
     }
 
