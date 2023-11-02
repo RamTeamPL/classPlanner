@@ -25,6 +25,9 @@ import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
+import { NewClassmateComponent } from './new-classmate/new-classmate.component';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 
@@ -52,6 +55,7 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
 
     AddNoteComponent,
     LessonComponent,
+    NewClassmateComponent,
 
     AddFundraisersComponent
 
@@ -64,6 +68,8 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
     BrowserAnimationsModule,
     MatRippleModule,
     [MatExpansionModule],
+    MatDividerModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
