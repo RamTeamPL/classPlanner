@@ -1,6 +1,6 @@
 #bg
 {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 10;
     width: 100%;
@@ -37,6 +37,15 @@ h1
     margin-right: auto;
     margin-top: 90px;
   }
+
+  .example-full-width:focus
+  {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+
 
   .example-full-width input
   {
