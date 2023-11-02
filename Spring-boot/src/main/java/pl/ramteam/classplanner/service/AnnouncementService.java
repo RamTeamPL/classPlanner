@@ -13,7 +13,7 @@ public class AnnouncementService {
 
     private final AnnouncementRepository announcementRepository;
 
-    public List<Announcement> getAnnouncements(){
-        return announcementRepository.findAll();
+    public List<Announcement> findAllByGroupId(int groupId){
+        return announcementRepository.findAllByGroupId(groupId);
     }
 }
