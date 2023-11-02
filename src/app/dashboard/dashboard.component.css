@@ -28,7 +28,9 @@ h3{
     margin: auto;
 }
 
-li{
+p{
+    border-top: 1px black dotted;
+    padding-top: 10px;
     color: white;
     font-size: large;
     display: block;

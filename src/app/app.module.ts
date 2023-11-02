@@ -21,7 +21,8 @@ import { TripsComponent } from './trips/trips.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
-
+import { TranslateModule } from '@ngx-translate/core';
+import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-angular';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { LessonComponent } from './lesson/lesson.component';
     BrowserAnimationsModule,
     MatRippleModule,
     [MatExpansionModule],
+    [BrowserModule, TranslateModule.forRoot(), StreamAutocompleteTextareaModule, StreamChatModule],
   ],
   providers: [],
   bootstrap: [AppComponent]
