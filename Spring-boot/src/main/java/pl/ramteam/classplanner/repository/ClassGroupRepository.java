@@ -13,7 +13,7 @@ import java.util.List;
 public interface ClassGroupRepository extends JpaRepository<ClassGroup, Integer> {
 
 //    @Query("Select cg From ClassGroup cg" + " left join fetch cg.groupMembers)
-    @Query("SELECT DISTINCT m FROM ClassGroup cg " +
+    @Query("SELECT m FROM ClassGroup cg " +
             "JOIN cg.groupMembers gm " +
             "JOIN Member m ON gm.memberId = m.id " +
             "WHERE cg.id = :groupId")
