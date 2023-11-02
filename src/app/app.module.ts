@@ -30,6 +30,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -70,6 +72,7 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
     [MatExpansionModule],
     MatDividerModule,
     MatButtonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -26,6 +26,7 @@ ul{
     display: block;
     padding: 15px;
     text-align: center;
+    
 }
 p{
     width: 100%;
@@ -38,3 +39,4 @@ select{
     background-color: #071C3E;
     color: white;
 }
+
