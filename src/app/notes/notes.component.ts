@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./notes.component.css'],
 })
 export class NotesComponent {
-  panelOpenState = true;
+  panelOpenState = false;
   color = "rgba(114, 114, 114, 0.495)"
 }

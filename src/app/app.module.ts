@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
-import { ChatComponent } from './chat/chat.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { TreasurerComponent } from './treasurer/treasurer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,6 +24,7 @@ import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
+
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
@@ -36,7 +36,6 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
     AppComponent,
     DashboardComponent,
     ErrorComponent,
-    ChatComponent,
     AnnouncementsComponent,
     TreasurerComponent,
     NavbarComponent,
@@ -58,9 +57,6 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
     NewClassmateComponent,
 
     AddFundraisersComponent
-
-
-
   ],
   imports: [
     BrowserModule,
