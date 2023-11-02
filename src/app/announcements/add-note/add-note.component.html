@@ -1,0 +1,16 @@
+<div id = "container">
+    <img src="assets/img/icons8-back-90.png" routerLink="/announcements"
+    matRipple
+    [matRippleCentered]="true"
+    [matRippleDisabled]="false"
+    [matRippleUnbounded]="false"
+    [matRippleRadius]="10"
+    [matRippleColor]="color">
+    <!--Dodawanie nowego ogłoszenia-->
+    <h2>Tytuł</h2>
+    <form action="" method="get">
+    <input type="text" name="title" id="title" placeholder="Tytuł Ogłoszenia" required>
+    <h2>Treść</h2>
+    <textarea id="tresc" name="tresc" placeholder="Treść ogłoszenia " rows="20"></textarea> <br>
+    <input type="submit" value="Dodaj"></form>
+</div>

@@ -1,1 +1,20 @@
-<p>announcements works!</p>
+<div class="box" routerLink="/each" *ngFor="let announce of announces" (click)="updateId(announce.id)"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="400"
+    [matRippleColor]="color">
+    <h3>{{announce.tytul}}</h3>
+    <ul>
+        <p>{{ announce.tresc | truncate:50 }}</p>
+    </ul>
+</div>
+
+<div id = "add" routerLink="/addNote"  routerLinkActive="active-add"
+    matRipple
+    [matRippleCentered]="true"
+    [matRippleDisabled]="false"
+    [matRippleUnbounded]="false"
+    [matRippleRadius]="20"
+    [matRippleColor]="color">+</div>

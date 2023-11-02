@@ -12,6 +12,10 @@ import { SettingsComponent } from './settings/settings.component';
 import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
+
+import { EachComponent } from './announcements/each/each.component';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
+
 import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
 
@@ -26,6 +30,14 @@ const routes: Routes = [
       {
         path: 'announcements',
         component: AnnouncementsComponent
+      },
+      {
+        path: 'addNote',
+        component: AddNoteComponent
+      },
+      {
+        path: 'each',
+        component: EachComponent
       },
       {
         path: 'chat',

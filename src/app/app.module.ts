@@ -18,6 +18,11 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+
+import { EachComponent } from './announcements/each/each.component';
+import { TruncatePipe } from './announcements/pipes/truncate.pipe';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
+
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
@@ -40,8 +45,14 @@ import { LessonComponent } from './lesson/lesson.component';
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
+
+    EachComponent,
+    TruncatePipe,
+    AddNoteComponent,
+
     AddNoteComponent,
     LessonComponent,
+
   ],
   imports: [
     BrowserModule,
