@@ -25,6 +25,8 @@ import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
+import { NewClassmateComponent } from './new-classmate/new-classmate.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
@@ -51,6 +53,7 @@ import { LessonComponent } from './lesson/lesson.component';
 
     AddNoteComponent,
     LessonComponent,
+    NewClassmateComponent,
 
   ],
   imports: [
@@ -59,6 +62,7 @@ import { LessonComponent } from './lesson/lesson.component';
     BrowserAnimationsModule,
     MatRippleModule,
     [MatExpansionModule],
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
