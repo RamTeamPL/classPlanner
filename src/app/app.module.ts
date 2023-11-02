@@ -28,6 +28,7 @@ import { LessonComponent } from './lesson/lesson.component';
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 
 @NgModule({
@@ -55,6 +56,10 @@ import {MatButtonModule} from '@angular/material/button';
     AddNoteComponent,
     LessonComponent,
     NewClassmateComponent,
+
+    AddFundraisersComponent
+
+
 
   ],
   imports: [
