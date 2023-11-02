@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./treasurer.component.css']
 })
 export class TreasurerComponent {
-
+  panelOpenState = true;
+  color = "rgba(114, 114, 114, 0.495)"
 }

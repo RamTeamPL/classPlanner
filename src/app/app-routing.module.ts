@@ -14,6 +14,7 @@ import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 const routes: Routes = [
   {
@@ -33,7 +34,17 @@ const routes: Routes = [
       },
       {
         path: 'treasurer',
-        component: TreasurerComponent
+        component: TreasurerComponent,
+        children: [
+          {
+            path: 'add-fundraisers',
+            component: AddFundraisersComponent
+          },
+          {
+            path: 'fundraisers',
+            component: FundraisersComponent
+          },
+        ]
       },
       {
         path: 'more',
@@ -69,10 +80,7 @@ const routes: Routes = [
         path: 'trips',
         component: TripsComponent
       },
-      {
-        path: 'fundraisers',
-        component: FundraisersComponent
-      },
+      
       {
         path: 'error',
         component: ErrorComponent

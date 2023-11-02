@@ -21,6 +21,7 @@ import { TripsComponent } from './trips/trips.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { LessonComponent } from './lesson/lesson.component';
     TripsComponent,
     AddNoteComponent,
     LessonComponent,
+    AddFundraisersComponent
   ],
   imports: [
     BrowserModule,
