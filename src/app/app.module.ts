@@ -36,6 +36,7 @@ import {ErrorStateMatcher} from '@angular/material/core';
 import {NgIf} from '@angular/common';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FundraisersComponent,
     TripsComponent,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
