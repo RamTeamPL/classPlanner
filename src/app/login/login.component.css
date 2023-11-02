@@ -8,3 +8,12 @@
     background: linear-gradient(90deg, rgba(0,0,109) 0%, rgb(0, 58, 173) 65%, rgb(24, 3, 147) 100%);
 
 }
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

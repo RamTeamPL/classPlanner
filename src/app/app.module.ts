@@ -23,6 +23,20 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LoginComponent } from './login/login.component';
+import {Component} from '@angular/core';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+import {NgIf} from '@angular/common';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -41,14 +55,15 @@ import { LoginComponent } from './login/login.component';
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     [MatButtonModule, MatDividerModule, MatIconModule],
-    [MatExpansionModule]
+    [MatExpansionModule],
+    [FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, NgIf]
   ],
   providers: [],
   bootstrap: [AppComponent]
