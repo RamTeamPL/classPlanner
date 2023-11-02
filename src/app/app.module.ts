@@ -25,6 +25,7 @@ import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 
 @NgModule({
@@ -51,6 +52,10 @@ import { LessonComponent } from './lesson/lesson.component';
 
     AddNoteComponent,
     LessonComponent,
+
+    AddFundraisersComponent
+
+
 
   ],
   imports: [
