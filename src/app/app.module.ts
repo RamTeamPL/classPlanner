@@ -22,6 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     NotesComponent,
     NotificationsComponent,
     FundraisersComponent,
-    TripsComponent
+    TripsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
