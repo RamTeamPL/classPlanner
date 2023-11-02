@@ -8,6 +8,16 @@
     background: linear-gradient(90deg, rgba(0,0,109) 0%, rgb(0, 58, 173) 65%, rgb(24, 3, 147) 100%);
 
 }
+
+#bglogin
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    height: 450px;
+    background-color: rgb(0, 29, 74, 70%);
+}
+
 .example-form {
     min-width: 150px;
     max-width: 500px;
@@ -15,5 +25,9 @@
   }
   
   .example-full-width {
-    width: 100%;
+    width: 80%;
+    display: block;
+    position: fixed;
+    left: 10%;
+    top: 100px;
   }
