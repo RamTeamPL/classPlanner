@@ -27,6 +27,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatRippleModule,
     [MatExpansionModule],
     MatDividerModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

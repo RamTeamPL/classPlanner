@@ -1,15 +1,16 @@
 <div class="box">
     <h3>Prośby o przyłączenie do grupy</h3>
-    <div *ngFor="let user of users">
+    <div *ngFor="let user of users; let last = last">
         <ul>
             <img src={{user.avatar}} alt="avatar">
             <pre>
     Imię: {{user.imie}}
     Nazwisko: {{user.nazwisko}}
     
-    <button>Zaakceptuj</button> <button>Zignoruj</button>
+    <!--Guziki mają działać-->
+    <button mat-flat-button color="primary">Zaakceptuj</button> <button mat-flat-button color="primary">Zignoruj</button>
             </pre>
         </ul>
-        <hr>
+        <hr *ngIf="!last">
     </div>
 </div>
