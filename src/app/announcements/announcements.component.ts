@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-announcements',
@@ -7,7 +8,7 @@ import { DataService } from './data.service';
   styleUrls: ['./announcements.component.css']
 })
 
-export class AnnouncementsComponent {
+export class AnnouncementsComponent implements OnInit {
   dataService = DataService;
   centered = false;
   disabled = false;
@@ -21,4 +22,12 @@ export class AnnouncementsComponent {
   updateId(id: number){
     this.dataService.sharedData = id;
   }
+
+  constructor(private http:HttpClient){ }
+
+  ngOnInit() {
+      // let response2 = this.http.get("http://localhost:8080/announcement/" + groupId)           Tutaj będzie pobierać wszystkie ogłoszenia należące do danej grupy
+  }
+
+
 }
