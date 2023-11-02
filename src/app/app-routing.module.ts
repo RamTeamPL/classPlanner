@@ -11,8 +11,14 @@ import { SettingsComponent } from './settings/settings.component';
 import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
-import { AddNoteComponent } from './add-note/add-note.component';
+
+import { EachComponent } from './announcements/each/each.component';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
+
+// import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
+import { NewClassmateComponent } from './new-classmate/new-classmate.component';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 const routes: Routes = [
   {
@@ -26,13 +32,31 @@ const routes: Routes = [
         path: 'announcements',
         component: AnnouncementsComponent
       },
-      // {
-      //   path: 'chat',
-      //   component: ChatComponent
-      // },
+      {
+        path: 'addNote',
+        component: AddNoteComponent
+      },
+      {
+        path: 'each',
+        component: EachComponent
+      },
+      {
+        path: 'newClassmate',
+        component: NewClassmateComponent
+      },
       {
         path: 'treasurer',
-        component: TreasurerComponent
+        component: TreasurerComponent,
+        children: [
+          {
+            path: 'add-fundraisers',
+            component: AddFundraisersComponent
+          },
+          {
+            path: 'fundraisers',
+            component: FundraisersComponent
+          },
+        ]
       },
       {
         path: 'more',
@@ -68,10 +92,7 @@ const routes: Routes = [
         path: 'trips',
         component: TripsComponent
       },
-      {
-        path: 'fundraisers',
-        component: FundraisersComponent
-      },
+      
       {
         path: 'error',
         component: ErrorComponent

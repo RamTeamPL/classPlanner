@@ -17,11 +17,19 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+
+import { EachComponent } from './announcements/each/each.component';
+import { TruncatePipe } from './announcements/pipes/truncate.pipe';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
+
 import {MatExpansionModule} from '@angular/material/expansion';
-import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-angular';
+
+import { NewClassmateComponent } from './new-classmate/new-classmate.component';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
+
 
 @NgModule({
   declarations: [
@@ -39,8 +47,16 @@ import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
+
+    EachComponent,
+    TruncatePipe,
+    AddNoteComponent,
+
     AddNoteComponent,
     LessonComponent,
+    NewClassmateComponent,
+
+    AddFundraisersComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +64,8 @@ import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-
     BrowserAnimationsModule,
     MatRippleModule,
     [MatExpansionModule],
-    [BrowserModule, TranslateModule.forRoot(), StreamAutocompleteTextareaModule, StreamChatModule],
+    MatDividerModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
