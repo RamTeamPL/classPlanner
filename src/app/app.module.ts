@@ -24,7 +24,6 @@ import { TruncatePipe } from './announcements/pipes/truncate.pipe';
 import { AddNoteComponent } from './announcements/add-note/add-note.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
-import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
 
 
