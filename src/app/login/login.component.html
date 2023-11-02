@@ -14,7 +14,7 @@
                 </mat-error>
             </mat-form-field>
 
-            <mat-form-field apperence="outline" class="example-full-width" style="margin-top: 25px;">
+            <mat-form-field apperence="outline" class="example-full-width" style="margin-top: 15px;">
                 <mat-label>Hasło</mat-label>
                 <input type="password" matInput [formControl]="passwordFormControl" [errorStateMatcher]="matcher"
                         placeholder="">
@@ -26,7 +26,8 @@
             <input type="submit" value="Zaloguj się ->">
             
         </form>
-        
+
+        <p>Jeśli nie masz konta to <a routerLink="#">stwórz je</a></p>
 
     </div>
 </div>

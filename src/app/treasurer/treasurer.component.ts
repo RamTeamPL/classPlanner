@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
   
 })
 export class TreasurerComponent {
-  centered = false;
-  disabled = false;
-  unbounded = false;
-  color = "rgba(114, 114, 114, 0.495)";
 }
 
