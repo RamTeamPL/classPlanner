@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
-import { ChatComponent } from './chat/chat.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { TreasurerComponent } from './treasurer/treasurer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -29,7 +28,6 @@ import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-
     AppComponent,
     DashboardComponent,
     ErrorComponent,
-    ChatComponent,
     AnnouncementsComponent,
     TreasurerComponent,
     NavbarComponent,

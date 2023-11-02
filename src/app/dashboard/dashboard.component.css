@@ -29,7 +29,7 @@ h3{
 }
 
 p{
-    border-top: 1px black dotted;
+    border-top: 1px black solid;
     padding-top: 10px;
     color: white;
     font-size: large;

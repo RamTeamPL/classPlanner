@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
-import { ChatComponent } from './chat/chat.component';
 import { TreasurerComponent } from './treasurer/treasurer.component';
 import { ErrorComponent } from './error/error.component';
 import { MoreComponent } from './more/more.component';
@@ -27,10 +26,10 @@ const routes: Routes = [
         path: 'announcements',
         component: AnnouncementsComponent
       },
-      {
-        path: 'chat',
-        component: ChatComponent
-      },
+      // {
+      //   path: 'chat',
+      //   component: ChatComponent
+      // },
       {
         path: 'treasurer',
         component: TreasurerComponent

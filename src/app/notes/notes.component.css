@@ -22,10 +22,6 @@
     color: white;
     text-align: center;
 }
-
-.mat-mdc-form-field + .mat-mdc-form-field {
-    margin-left: 8px;
-}
 #container{
     margin:10px;
     color:white;
@@ -61,6 +57,19 @@
     background-color: blue;
     border-radius: 10px;
 }
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
 h3{
     padding: 10px;
+}
+p{
+    padding-top: 10px;
+    border-top: 1px black solid;
+    /* background-color: black; */
+    width: 100%;
+}
+
+.mat-accordion, .mat-expansion-panel-header, .mat-expansion-panel, .mat-panel-title {
+    background-color: green;
 }
