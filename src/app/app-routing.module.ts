@@ -98,11 +98,11 @@ const routes: Routes = [
             path: 'addHomework',
             component: AddHomeworkComponent
           },
-          {
-            path: 'homework',
-            component: HomeworkComponent
-          }
         ]
+      },
+      {
+        path: 'homework',
+        component: HomeworkComponent
       },
       {
         path: 'trips',
