@@ -18,9 +18,9 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 
-import { EachComponent } from './announcements/each/each.component';
-import { TruncatePipe } from './announcements/pipes/truncate.pipe';
-import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
+import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
+import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
@@ -51,7 +51,7 @@ import {HttpClientModule} from '@angular/common/http';
     FundraisersComponent,
     TripsComponent,
 
-    EachComponent,
+    EachAnnouncementComponent,
     TruncatePipe,
     AddAnnouncementComponent,
 
