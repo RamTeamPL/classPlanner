@@ -17,10 +17,22 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+import {MatIconModule} from '@angular/material/icon';
+import { LoginComponent } from './login/login.component';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+import {NgIf} from '@angular/common';
+import { RegisterComponent } from './register/register.component';
 
-import { EachComponent } from './announcements/each/each.component';
-import { TruncatePipe } from './announcements/pipes/truncate.pipe';
-import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
+import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
+import { TruncatePipe } from '../pipes/truncate.pipe';
+import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
@@ -30,7 +42,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
-
 import {HttpClientModule} from '@angular/common/http';
 import { HomeworksComponent } from './homeworks/homeworks.component';
 import { AddHomeworkComponent } from './add-homework/add-homework.component';
@@ -57,8 +68,8 @@ import {FormsModule} from '@angular/forms';
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
-
-    EachComponent,
+    EachAnnouncementComponent,
+    LoginComponent,
     TruncatePipe,
     AddAnnouncementComponent,
 
@@ -75,12 +86,14 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatRippleModule,
+    [MatDividerModule, MatIconModule],
+    [ReactiveFormsModule, NgIf],
     [MatExpansionModule],
-    MatDividerModule,
+    [MatDividerModule,
     MatButtonModule,
-    HttpClientModule,
-    [FormsModule, MatFormFieldModule, MatInputModule]
+    HttpClientModule],
+    [FormsModule, MatFormFieldModule, MatInputModule],
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

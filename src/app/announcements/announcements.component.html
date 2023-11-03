@@ -1,4 +1,4 @@
-<div class="box" routerLink="/each" *ngFor="let announce of announces" (click)="updateId(announce.id)"
+<div class="box" routerLink="/each-announcement" *ngFor="let announce of announces" (click)="updateId(announce.id)"
     matRipple
     [matRippleCentered]="centered"
     [matRippleDisabled]="disabled"
@@ -11,7 +11,7 @@
     </ul>
 </div>
 
-<div id = "add" routerLink="/addAnnouncement"  routerLinkActive="active-add"
+<div id = "add" routerLink="/add-announcement"  routerLinkActive="active-add"
     matRipple
     [matRippleCentered]="true"
     [matRippleDisabled]="false"

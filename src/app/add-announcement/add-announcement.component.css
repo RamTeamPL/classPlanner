@@ -17,6 +17,12 @@
 
 textarea{
     width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0px 1px 2px black;
+    font-family:"Arial", Times, serif;  
+    font-size: 14px;   
 }
 
 img{
@@ -42,10 +48,6 @@ input[type="submit"]{
     box-shadow: inset 0px 1px 2px black;
     padding: 5px;
     margin: 10px;
-}
-
-input[type="file"]{
-    display: none;
 }
 
 label{
