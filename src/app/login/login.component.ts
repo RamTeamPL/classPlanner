@@ -8,6 +8,7 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
+import {NgIf} from '@angular/common';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -19,7 +20,8 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css', './login.component.scss']
+  styleUrls: ['./login.component.css', './login.component.scss'],
+  standalone: false,
 })
 
 export class LoginComponent {
