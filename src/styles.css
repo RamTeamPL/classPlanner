@@ -1,9 +1,12 @@
 html, body { height: 100%; }
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background: rgb(0,0,109);
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     background: linear-gradient(90deg, rgba(0,0,109,0.969152626871061) 0%, rgb(0, 58, 173) 65%, rgb(24, 3, 147) 100%);
+    padding-bottom: 100;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
-
-

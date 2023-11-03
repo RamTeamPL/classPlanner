@@ -15,10 +15,22 @@
     height: 62px;
     display: inline-block;
     padding-top: 7px;
+
+    cursor: pointer;
+    display: inline-block;
+
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 img{
-    width: 50px;
+    width: 30px;
     display: block;
     margin: auto;
+}
+
+p{color: white; text-align: center;}
+
+.active-link{
+    background-color: rgb(40, 40, 40);
 }

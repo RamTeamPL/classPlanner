@@ -1,0 +1,68 @@
+#homework{
+    width: 90%;
+    height: auto;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+#note{
+    width: 90%;
+    height: auto;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+#container{
+    margin:10px;
+    color:white;
+    padding-bottom: 80px;
+}
+#add{
+    color: white;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    float: right;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 20px;
+    right: 10px;
+    bottom: 80px;
+    position: fixed;
+    animation: addRotate;
+    animation-duration: 5s;
+    z-index: 5;
+}
+
+.active-add{
+    display: none;
+}
+
+.lesson{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: blue;
+    border-radius: 10px;
+}
+h3{
+    padding: 10px;
+}
+p{
+    padding-top: 10px;
+    border-top: 1px black solid;
+    /* background-color: black; */
+    width: 100%;
+}

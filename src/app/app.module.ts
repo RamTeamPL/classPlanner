@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatRippleModule} from '@angular/material/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
-import { ChatComponent } from './chat/chat.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { TreasurerComponent } from './treasurer/treasurer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -37,12 +37,34 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RegisterComponent } from './register/register.component';
 
+import { EachComponent } from './announcements/each/each.component';
+import { TruncatePipe } from './announcements/pipes/truncate.pipe';
+import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
+
+import {MatExpansionModule} from '@angular/material/expansion';
+import { LessonComponent } from './lesson/lesson.component';
+
+import { NewClassmateComponent } from './new-classmate/new-classmate.component';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
+import { AddNoteComponent } from './add-note/add-note.component';
+
+import {HttpClientModule} from '@angular/common/http';
+import { HomeworksComponent } from './homeworks/homeworks.component';
+import { AddHomeworkComponent } from './add-homework/add-homework.component';
+import { HomeworkComponent } from './homework/homework.component';
+import {Component} from '@angular/core';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ErrorComponent,
-    ChatComponent,
     AnnouncementsComponent,
     TreasurerComponent,
     NavbarComponent,
@@ -55,14 +77,31 @@ import { RegisterComponent } from './register/register.component';
     FundraisersComponent,
     LoginComponent,
     TripsComponent
+    EachComponent,
+    TruncatePipe,
+    AddAnnouncementComponent,
+
+    AddNoteComponent,
+    LessonComponent,
+    NewClassmateComponent,
+
+    AddFundraisersComponent,
+      HomeworksComponent,
+      AddHomeworkComponent,
+      HomeworkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    [MatButtonModule, MatDividerModule, MatIconModule],
+    [MatDividerModule, MatIconModule],
+    [ReactiveFormsModule, NgIf]
+    MatRippleModule,
     [MatExpansionModule],
-    [FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, NgIf]
+    [MatDividerModule,
+    MatButtonModule,
+    HttpClientModule],
+    [FormsModule, MatFormFieldModule, MatInputModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

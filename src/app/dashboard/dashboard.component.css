@@ -1,4 +1,10 @@
-#box{
+#container{
+    padding-bottom: 80px;
+}
+.box:first-child{
+    margin-top: 5%;
+}
+.box{
     width: 90%;
     height: auto;
     background-color: rgba(7, 58, 71, 0.912);
@@ -6,7 +12,7 @@
     display: block;
     margin: auto;
     padding-top: 9px;
-    margin-top: 5%;
+    margin-top: 10px;
     padding-bottom: 7px;
     border-radius: 10px;
 }
@@ -14,14 +20,17 @@
 h3{
     color: white;
     background-color: rgba(78, 106, 206, 0.866);
-    height: 40px;
+    height: auto;
+    padding: 2px;
     font-size: x-large;
     font-weight: 500;
     display: block;
     margin: auto;
 }
 
-li{
+p{
+    border-top: 1px black solid;
+    padding-top: 10px;
     color: white;
     font-size: large;
     display: block;

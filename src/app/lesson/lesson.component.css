@@ -1,0 +1,44 @@
+#container{
+    padding-top: 5%;
+    padding-bottom: 80px;
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#gallery{
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    
+    background-color: rgb(173, 173, 228);
+
+    animation-name: slide;
+    animation-duration: 5s;
+}
+
+img:first-child{
+        top: 5px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        position: sticky;
+}
+
+img{
+    width:98%;
+    margin:1%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+@keyframes slide{
+    from{height: 0;}
+    to{height: 100px;}
+}

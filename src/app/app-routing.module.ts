@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
-import { ChatComponent } from './chat/chat.component';
 import { TreasurerComponent } from './treasurer/treasurer.component';
 import { ErrorComponent } from './error/error.component';
 import { MoreComponent } from './more/more.component';
@@ -13,6 +12,16 @@ import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { LoginComponent } from './login/login.component';
+
+import { EachComponent } from './announcements/each/each.component';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
+import { HomeworksComponent } from './homeworks/homeworks.component';
+//import { AddNoteComponent } from './add-note/add-note.component';
+import { LessonComponent } from './lesson/lesson.component';
+import { NewClassmateComponent } from './new-classmate/new-classmate.component';
+import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
+import { AddHomeworkComponent } from './add-homework/add-homework.component';
+import { HomeworkComponent } from './homework/homework.component';
 
 const routes: Routes = [
   {
@@ -27,12 +36,30 @@ const routes: Routes = [
         component: AnnouncementsComponent
       },
       {
-        path: 'chat',
-        component: ChatComponent
+        path: 'addAnnouncement',
+        component: AddAnnouncementComponent
+      },
+      {
+        path: 'each',
+        component: EachComponent
+      },
+      {
+        path: 'newClassmate',
+        component: NewClassmateComponent
       },
       {
         path: 'treasurer',
-        component: TreasurerComponent
+        component: TreasurerComponent,
+        children: [
+          {
+            path: 'add-fundraisers',
+            component: AddFundraisersComponent
+          },
+          {
+            path: 'fundraisers',
+            component: FundraisersComponent
+          },
+        ]
       },
       {
         path: 'more',
@@ -52,16 +79,37 @@ const routes: Routes = [
       },
       {
         path: 'notes',
-        component: NotesComponent
+        component: NotesComponent,
+        children: [
+          {
+            path: 'addNote',
+            component: AddNoteComponent
+          },
+          {
+            path: 'lesson',
+            component: LessonComponent
+          },
+        ]
+      },
+      {
+        path: "homeworks",
+        component: HomeworksComponent,
+        children: [
+          {
+            path: 'addHomework',
+            component: AddHomeworkComponent
+          },
+          {
+            path: 'homework',
+            component: HomeworkComponent
+          }
+        ]
       },
       {
         path: 'trips',
         component: TripsComponent
       },
-      {
-        path: 'fundraisers',
-        component: FundraisersComponent
-      },
+      
       {
         path: 'login',
         component: LoginComponent
@@ -70,10 +118,10 @@ const routes: Routes = [
         path: 'error',
         component: ErrorComponent
       },
-      {
-        path: '**',
-        redirectTo: 'error'
-      }
+      // {
+      //   path: '**',
+      //   redirectTo: 'error'
+      // }
     ]
   }
 ];
