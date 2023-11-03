@@ -17,8 +17,11 @@
 }
 .people{
     font-size: 17px;
-   margin: 0px;
+    margin-top: 2px;
     height: auto;
+    padding: 2px;
+    
+    
 }
 
 
