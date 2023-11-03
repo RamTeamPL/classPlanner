@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
-import { ChatComponent } from './chat/chat.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { TreasurerComponent } from './treasurer/treasurer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,11 +24,14 @@ import { AddAnnouncementComponent } from './announcements/add-announcement/add-a
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
+
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
+
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -37,7 +39,6 @@ import { AddNoteComponent } from './add-note/add-note.component';
     AppComponent,
     DashboardComponent,
     ErrorComponent,
-    ChatComponent,
     AnnouncementsComponent,
     TreasurerComponent,
     NavbarComponent,
@@ -59,9 +60,6 @@ import { AddNoteComponent } from './add-note/add-note.component';
     NewClassmateComponent,
 
     AddFundraisersComponent
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -71,6 +69,7 @@ import { AddNoteComponent } from './add-note/add-note.component';
     [MatExpansionModule],
     MatDividerModule,
     MatButtonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

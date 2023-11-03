@@ -1,0 +1,7 @@
+{
+  "name": "class-planner",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
