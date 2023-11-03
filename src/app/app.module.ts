@@ -31,6 +31,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import { HomeworksComponent } from './homeworks/homeworks.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {HttpClientModule} from '@angular/common/http';
     LessonComponent,
     NewClassmateComponent,
 
-    AddFundraisersComponent
+    AddFundraisersComponent,
+      HomeworksComponent
   ],
   imports: [
     BrowserModule,
