@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../announcements/data.service';
 
 @Component({
-  selector: 'app-each',
-  templateUrl: './each.component.html',
-  styleUrls: ['./each.component.css']
+  selector: 'app-each-announcement',
+  templateUrl: './each-announcement.component.html',
+  styleUrls: ['./each-announcement.component.css']
 })
-export class EachComponent {
+export class EachAnnouncementComponent {
   dataService = DataService;
   centered = false;
   disabled = false;

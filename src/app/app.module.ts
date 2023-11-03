@@ -37,9 +37,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RegisterComponent } from './register/register.component';
 
-import { EachComponent } from './announcements/each/each.component';
-import { TruncatePipe } from './announcements/pipes/truncate.pipe';
-import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
+import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
+import { TruncatePipe } from '../pipes/truncate.pipe';
+import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
@@ -49,7 +49,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
-
+import {MatInputModule} from '@angular/material/input';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeworksComponent } from './homeworks/homeworks.component';
 import { AddHomeworkComponent } from './add-homework/add-homework.component';
@@ -75,9 +75,9 @@ import {FormsModule} from '@angular/forms';
     NotesComponent,
     NotificationsComponent,
     FundraisersComponent,
+    TripsComponent,
+    EachAnnouncementComponent,
     LoginComponent,
-    TripsComponent
-    EachComponent,
     TruncatePipe,
     AddAnnouncementComponent,
 

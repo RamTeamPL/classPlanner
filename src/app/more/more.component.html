@@ -1,2 +1,10 @@
-<p routerLink="treasurer">skarbnik</p>
-<app-navbar></app-navbar>
+<div class="box" routerLink="/new-classmate"
+        matRipple
+        [matRippleCentered]="centered"
+        [matRippleDisabled]="disabled"
+        [matRippleUnbounded]="unbounded"
+        [matRippleRadius]="400"
+        [matRippleColor]="color">
+        <h3>Podania o dołączenie do grupy</h3>
+        <p *ngFor="let user of users.slice(0,2)">{{user.name}} {{user.lastname}}</p>
+    </div>

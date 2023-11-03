@@ -12,11 +12,9 @@ import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { LoginComponent } from './login/login.component';
-
-import { EachComponent } from './announcements/each/each.component';
-import { AddNoteComponent } from './announcements/add-note/add-note.component';
-import { HomeworksComponent } from './homeworks/homeworks.component';
-//import { AddNoteComponent } from './add-note/add-note.component';
+import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
+import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
+import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
@@ -36,15 +34,15 @@ const routes: Routes = [
         component: AnnouncementsComponent
       },
       {
-        path: 'addAnnouncement',
+        path: 'add-announcement',
         component: AddAnnouncementComponent
       },
       {
-        path: 'each',
-        component: EachComponent
+        path: 'each-announcement',
+        component: EachAnnouncementComponent
       },
       {
-        path: 'newClassmate',
+        path: 'new-classmate',
         component: NewClassmateComponent
       },
       {
