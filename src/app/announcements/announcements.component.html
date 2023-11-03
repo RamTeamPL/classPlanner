@@ -5,13 +5,13 @@
     [matRippleUnbounded]="unbounded"
     [matRippleRadius]="400"
     [matRippleColor]="color">
-    <h3>{{announce.tytul}}</h3>
+    <h3>{{announce.title}}</h3>
     <ul>
-        <p>{{ announce.tresc | truncate:50 }}</p>
+        <p>{{ announce.content | truncate:50 }}</p>
     </ul>
 </div>
 
-<div id = "add" routerLink="/addNote"  routerLinkActive="active-add"
+<div id = "add" routerLink="/addAnnouncement"  routerLinkActive="active-add"
     matRipple
     [matRippleCentered]="true"
     [matRippleDisabled]="false"
