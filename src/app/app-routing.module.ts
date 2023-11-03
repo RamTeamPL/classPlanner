@@ -13,12 +13,14 @@ import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 
 import { EachComponent } from './announcements/each/each.component';
-import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
-
-import { AddNoteComponent } from './add-note/add-note.component';
+import { AddNoteComponent } from './announcements/add-note/add-note.component';
+import { HomeworksComponent } from './homeworks/homeworks.component';
+//import { AddNoteComponent } from './add-note/add-note.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
+import { AddHomeworkComponent } from './add-homework/add-homework.component';
+import { HomeworkComponent } from './homework/homework.component';
 
 const routes: Routes = [
   {
@@ -86,6 +88,20 @@ const routes: Routes = [
             path: 'lesson',
             component: LessonComponent
           },
+        ]
+      },
+      {
+        path: "homeworks",
+        component: HomeworksComponent,
+        children: [
+          {
+            path: 'addHomework',
+            component: AddHomeworkComponent
+          },
+          {
+            path: 'homework',
+            component: HomeworkComponent
+          }
         ]
       },
       {

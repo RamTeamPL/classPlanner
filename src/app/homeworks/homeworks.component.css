@@ -1,4 +1,4 @@
-#lesson{
+#homework{
     width: 90%;
     height: auto;
     background-color: black;
@@ -42,7 +42,7 @@
     position: fixed;
     animation: addRotate;
     animation-duration: 5s;
-
+    z-index: 5;
 }
 
 .active-add{

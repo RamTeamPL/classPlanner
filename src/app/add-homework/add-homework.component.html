@@ -1,0 +1,35 @@
+<div id="container">
+    <div id = "add-note">
+        <img src="assets/img/icons8-back-90.png" routerLink="../"
+        matRipple
+        [matRippleCentered]="true"
+        [matRippleDisabled]="false"
+        [matRippleUnbounded]="false"
+        [matRippleRadius]="10"
+        [matRippleColor]="color">
+        
+        <h2>Dodaj zadanie</h2>
+            <form action="" method="get">
+                <mat-form-field class="formfield">
+                    <mat-label>Wybierz przedmiot</mat-label>
+                    <select matNativeControl required>
+                      <option value="Polski">Polski</option>
+                      <option value="Angielski">Angielski</option>
+                      <option value="Matematyka">Matemetyka</option>
+                      <option value="Niemiecki">Niemiecki</option>
+                    </select>
+                  </mat-form-field>              
+                <mat-form-field class="formfield">
+                  <mat-label>Dodaj opis zadania</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+
+                <mat-form-field class="formfield">
+                    <mat-label>Termin wykonania</mat-label>
+                    <input type="date" matInput>
+                </mat-form-field><br>
+                
+                
+              <button mat-raised-button color="primary" type="submit">Dodaj</button>
+            </form>
+    </div></div>
