@@ -1,0 +1,130 @@
+#bgacc
+{
+    border-top: 4px solid #071C3E;
+    height: 420px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    background-color: rgb(0, 29, 74, 70%);
+    border-radius: 8px;
+    border-bottom: 5px solid #071C3E;
+}
+
+img.profileimg
+{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.user
+{
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #0D1B31;
+}
+
+div.allinfo
+{
+    color: rgb(221, 221, 221);
+    font-size: 16px;
+}
+
+div.firstname
+{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #071C3E;
+}
+
+div.firstname > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+div.lastname
+{
+    margin-top: 3px;
+    padding: 10px;
+    background-color: #0A1C38;
+}
+
+div.lastname > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+div.class
+{
+    margin-top: 3px;
+    padding: 10px;
+    background-color: #071C3E;
+}
+
+div.class > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+div.mail
+{
+    font-size: 14px;
+    margin-top: 3px;
+    padding: 8px;
+    background-color: #0A1C38;
+
+    
+}
+
+div.mail > span
+{
+    position: absolute;
+    left: 30%;
+}
+
+section {
+    display: table;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  
+
+

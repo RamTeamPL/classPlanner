@@ -17,6 +17,25 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { LoginComponent } from './login/login.component';
+import {Component} from '@angular/core';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+import {NgIf} from '@angular/common';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { RegisterComponent } from './register/register.component';
 
 import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
 import { TruncatePipe } from '../pipes/truncate.pipe';
@@ -32,6 +51,13 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
 import { AddNoteComponent } from './add-note/add-note.component';
 import {MatInputModule} from '@angular/material/input';
 import {HttpClientModule} from '@angular/common/http';
+import { HomeworksComponent } from './homeworks/homeworks.component';
+import { AddHomeworkComponent } from './add-homework/add-homework.component';
+import { HomeworkComponent } from './homework/homework.component';
+import {Component} from '@angular/core';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -50,8 +76,8 @@ import {HttpClientModule} from '@angular/common/http';
     NotificationsComponent,
     FundraisersComponent,
     TripsComponent,
-
     EachAnnouncementComponent,
+    LoginComponent,
     TruncatePipe,
     AddAnnouncementComponent,
 
@@ -59,18 +85,23 @@ import {HttpClientModule} from '@angular/common/http';
     LessonComponent,
     NewClassmateComponent,
 
-    AddFundraisersComponent
+    AddFundraisersComponent,
+      HomeworksComponent,
+      AddHomeworkComponent,
+      HomeworkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    [MatDividerModule, MatIconModule],
+    [ReactiveFormsModule, NgIf]
     MatRippleModule,
     [MatExpansionModule],
-    MatDividerModule,
+    [MatDividerModule,
     MatButtonModule,
-    HttpClientModule,
-    MatInputModule
+    HttpClientModule],
+    [FormsModule, MatFormFieldModule, MatInputModule]
   ],
   providers: [],
   bootstrap: [AppComponent]
