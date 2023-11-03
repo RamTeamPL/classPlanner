@@ -93,7 +93,8 @@ import {FormsModule} from '@angular/forms';
     MatButtonModule,
     HttpClientModule],
     [FormsModule, MatFormFieldModule, MatInputModule],
-    MatRippleModule
+    MatRippleModule,
+    [FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, NgIf]
   ],
   providers: [],
   bootstrap: [AppComponent]
