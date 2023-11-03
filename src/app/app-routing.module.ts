@@ -19,6 +19,8 @@ import { HomeworksComponent } from './homeworks/homeworks.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
+import { AddHomeworkComponent } from './add-homework/add-homework.component';
+import { HomeworkComponent } from './homework/homework.component';
 
 const routes: Routes = [
   {
@@ -90,7 +92,17 @@ const routes: Routes = [
       },
       {
         path: "homeworks",
-        component: HomeworksComponent
+        component: HomeworksComponent,
+        children: [
+          {
+            path: 'addHomework',
+            component: AddHomeworkComponent
+          },
+          {
+            path: 'homework',
+            component: HomeworkComponent
+          }
+        ]
       },
       {
         path: 'trips',

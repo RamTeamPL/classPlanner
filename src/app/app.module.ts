@@ -32,6 +32,12 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
 
 import {HttpClientModule} from '@angular/common/http';
 import { HomeworksComponent } from './homeworks/homeworks.component';
+import { AddHomeworkComponent } from './add-homework/add-homework.component';
+import { HomeworkComponent } from './homework/homework.component';
+import {Component} from '@angular/core';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -60,7 +66,9 @@ import { HomeworksComponent } from './homeworks/homeworks.component';
     NewClassmateComponent,
 
     AddFundraisersComponent,
-      HomeworksComponent
+      HomeworksComponent,
+      AddHomeworkComponent,
+      HomeworkComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +79,7 @@ import { HomeworksComponent } from './homeworks/homeworks.component';
     MatDividerModule,
     MatButtonModule,
     HttpClientModule,
+    [FormsModule, MatFormFieldModule, MatInputModule]
   ],
   providers: [],
   bootstrap: [AppComponent]
