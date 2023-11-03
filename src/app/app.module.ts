@@ -30,7 +30,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
-
+import {MatInputModule} from '@angular/material/input';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -70,6 +70,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatDividerModule,
     MatButtonModule,
     HttpClientModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
