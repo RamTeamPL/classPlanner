@@ -92,7 +92,7 @@ const routes: Routes = [
       },
       {
         path: "homeworks",
-        component: HomeworkComponent,
+        component: HomeworksComponent,
         children: [
           {
             path: 'addHomework',
