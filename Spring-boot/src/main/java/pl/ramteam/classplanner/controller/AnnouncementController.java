@@ -18,4 +18,6 @@ public class AnnouncementController {
     public List<Announcement> announcement(@PathVariable int groupId){
         return announcementService.findAllByGroupId(groupId);
     }
+
+
 }
