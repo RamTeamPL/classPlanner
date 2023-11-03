@@ -11,6 +11,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { NotesComponent } from './notes/notes.component';
 import { TripsComponent } from './trips/trips.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
+import { LoginComponent } from './login/login.component';
 
 import { EachComponent } from './announcements/each/each.component';
 import { AddNoteComponent } from './announcements/add-note/add-note.component';
@@ -109,6 +110,10 @@ const routes: Routes = [
         component: TripsComponent
       },
       
+      {
+        path: 'login',
+        component: LoginComponent
+      },
       {
         path: 'error',
         component: ErrorComponent

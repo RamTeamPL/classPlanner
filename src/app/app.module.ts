@@ -17,6 +17,25 @@ import { NotesComponent } from './notes/notes.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { LoginComponent } from './login/login.component';
+import {Component} from '@angular/core';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+import {NgIf} from '@angular/common';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { RegisterComponent } from './register/register.component';
 
 import { EachComponent } from './announcements/each/each.component';
 import { TruncatePipe } from './announcements/pipes/truncate.pipe';
@@ -56,8 +75,8 @@ import {FormsModule} from '@angular/forms';
     NotesComponent,
     NotificationsComponent,
     FundraisersComponent,
-    TripsComponent,
-
+    LoginComponent,
+    TripsComponent
     EachComponent,
     TruncatePipe,
     AddAnnouncementComponent,
@@ -75,11 +94,13 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    [MatDividerModule, MatIconModule],
+    [ReactiveFormsModule, NgIf]
     MatRippleModule,
     [MatExpansionModule],
-    MatDividerModule,
+    [MatDividerModule,
     MatButtonModule,
-    HttpClientModule,
+    HttpClientModule],
     [FormsModule, MatFormFieldModule, MatInputModule]
   ],
   providers: [],
