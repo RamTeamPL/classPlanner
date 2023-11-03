@@ -10,3 +10,13 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
 }
+
+.box{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: rgba(55, 55, 184, 0.616);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgb(38, 38, 116);
+}
