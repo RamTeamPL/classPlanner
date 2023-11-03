@@ -18,23 +18,16 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 import {MatIconModule} from '@angular/material/icon';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatButtonModule} from '@angular/material/button';
-import {MatExpansionModule} from '@angular/material/expansion';
 import { LoginComponent } from './login/login.component';
-import {Component} from '@angular/core';
 import {
   FormControl,
   FormGroupDirective,
   NgForm,
   Validators,
-  FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import {NgIf} from '@angular/common';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import { RegisterComponent } from './register/register.component';
 
 import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
@@ -49,7 +42,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
 import { AddNoteComponent } from './add-note/add-note.component';
-import {MatInputModule} from '@angular/material/input';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeworksComponent } from './homeworks/homeworks.component';
 import { AddHomeworkComponent } from './add-homework/add-homework.component';
@@ -95,13 +87,13 @@ import {FormsModule} from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     [MatDividerModule, MatIconModule],
-    [ReactiveFormsModule, NgIf]
-    MatRippleModule,
+    [ReactiveFormsModule, NgIf],
     [MatExpansionModule],
     [MatDividerModule,
     MatButtonModule,
     HttpClientModule],
-    [FormsModule, MatFormFieldModule, MatInputModule]
+    [FormsModule, MatFormFieldModule, MatInputModule],
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
