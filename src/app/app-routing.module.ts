@@ -84,11 +84,11 @@ const routes: Routes = [
             path: 'addNote',
             component: AddNoteComponent
           },
-          {
-            path: 'lesson',
-            component: LessonComponent
-          },
         ]
+      },
+      {
+        path: 'lesson',
+        component: LessonComponent
       },
       {
         path: "homeworks",
