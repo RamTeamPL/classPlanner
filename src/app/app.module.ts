@@ -19,7 +19,7 @@ import { FundraisersComponent } from './fundraisers/fundraisers.component';
 import { TripsComponent } from './trips/trips.component';
 
 import { EachAnnouncementComponent } from './each-announcement/each-announcement.component';
-import { TruncatePipe } from './pipes/truncate.pipe';
+import { TruncatePipe } from '../pipes/truncate.pipe';
 import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
