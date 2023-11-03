@@ -3,6 +3,7 @@ package pl.ramteam.classplanner.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import pl.ramteam.classplanner.model.Announcement;
 import pl.ramteam.classplanner.model.Member;
 import pl.ramteam.classplanner.repository.MemberRepository;
 
@@ -33,4 +34,8 @@ public class MemberService {
     public void deleteMember(int id) {
         memberRepository.deleteById(id);
     }
+
+  public List<Announcement> findAnnouncements(){
+      return memberRepository
+  }
 }
