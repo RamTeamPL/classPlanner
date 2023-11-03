@@ -21,7 +21,7 @@ import { TripsComponent } from './trips/trips.component';
 
 import { EachComponent } from './announcements/each/each.component';
 import { TruncatePipe } from './announcements/pipes/truncate.pipe';
-import { AddNoteComponent } from './announcements/add-note/add-note.component';
+import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
@@ -29,6 +29,7 @@ import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.component';
+import { AddNoteComponent } from './add-note/add-note.component';
 
 
 @NgModule({
@@ -51,7 +52,7 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
 
     EachComponent,
     TruncatePipe,
-    AddNoteComponent,
+    AddAnnouncementComponent,
 
     AddNoteComponent,
     LessonComponent,
