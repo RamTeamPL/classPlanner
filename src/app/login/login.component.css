@@ -11,12 +11,12 @@
 
 #bglogin
 {
-    border-bottom: 4px solid rgb(6, 0, 94);
+    border-bottom: 4px solid rgba(104, 93, 255, 0.43);
     margin: auto;
     margin-top: 50px;
     width: 90%;
     height: 450px;
-    background-color: rgb(0, 29, 74, 70%);
+    background-color: rgba(0, 56, 140, 0.7);
     color: white;
     border-radius: 8px;
 }
@@ -28,7 +28,7 @@ h1
     text-align: center;
     position: relative;
     top: 40px;
-    background-color: #0D1B31;
+    background-color: #002d76;
     padding: 10px;
 }
   
@@ -40,9 +40,9 @@ h1
     margin-left: auto;
     margin-right: auto;
     margin-top: 90px;
+
+
 }
-
-
 
 .example-full-width:focus
 {
@@ -52,18 +52,10 @@ h1
     -o-user-drag: none;
 }
 
-
 .example-full-width input
 {
-    color: rgb(0, 0, 88);
+    color: rgb(185, 185, 250);
 }
-
-
-.matInput
-{
-    background-color: blue;
-}
-
 
 input[type="submit"]
 {
@@ -78,6 +70,10 @@ input[type="submit"]
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(6, 104, 165);
+    color: white;
   }
 
 

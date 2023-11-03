@@ -22,6 +22,7 @@ import { AddFundraisersComponent } from './add-fundraisers/add-fundraisers.compo
 import { AddHomeworkComponent } from './add-homework/add-homework.component';
 import { HomeworkComponent } from './homework/homework.component';
 import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
+import { RegisterComponent } from './register/register.component';
 //import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
 
 
@@ -75,6 +76,11 @@ const routes: Routes = [
         path: 'profile',
         component: ProfileComponent
       },
+      {
+        path: 'register',
+        component: RegisterComponent
+      },
+
       {
         path: 'settings',
         component: SettingsComponent
