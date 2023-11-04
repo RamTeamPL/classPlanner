@@ -1,6 +1,7 @@
 package pl.ramteam.classplanner.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,10 @@ public class AnnouncementController {
     public List<Announcement> announcement(@PathVariable int groupId){
         return announcementService.findAllByGroupId(groupId);
     }
-
+    @CrossOrigin("http://localhost:4200")
+    @GetMapping("/announcementById/{id}")
+    public Announcement announcementById(@PathVariable int id){
+      return announcementService.findById(id);
+    }
 
 }

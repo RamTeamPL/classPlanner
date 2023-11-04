@@ -38,4 +38,8 @@ public class MemberService {
   public List<Announcement> findAnnouncementsByMemberId(int memberId){
       return memberRepository.FindAnnouncementsByMemberId(memberId);
   }
+
+  public Member findById(int id) {
+      return memberRepository.findById(id).orElseThrow();
+  }
 }
