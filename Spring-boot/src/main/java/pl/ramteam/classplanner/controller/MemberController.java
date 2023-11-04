@@ -39,7 +39,7 @@ public class MemberController {
     }
 
     @CrossOrigin("http://localhost:4200")
-    @GetMapping("/creatorById")
+    @GetMapping("/creatorById/{id}")
     public Member getById(@PathVariable int id){
         return memberService.findById(id);
     }

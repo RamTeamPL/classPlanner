@@ -1,10 +1,7 @@
 package pl.ramteam.classplanner.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.ramteam.classplanner.model.Announcement;
 import pl.ramteam.classplanner.service.AnnouncementService;
 
@@ -25,4 +22,9 @@ public class AnnouncementController {
       return announcementService.findById(id);
     }
 
+  @CrossOrigin("http://localhost:4200")
+  @PostMapping("/announcement")
+  public Announcement addAnnouncement(@RequestBody Announcement announcement){
+      return announcementService.addAnnouncement(announcement);
+  }
 }
