@@ -35,7 +35,11 @@ public class MemberService {
         memberRepository.deleteById(id);
     }
 
-  public List<Announcement> findAnnouncements(){
-      return memberRepository
+  public List<Announcement> findAnnouncementsByMemberId(int memberId){
+      return memberRepository.FindAnnouncementsByMemberId(memberId);
+  }
+
+  public Member findById(int id) {
+      return memberRepository.findById(id).orElseThrow();
   }
 }

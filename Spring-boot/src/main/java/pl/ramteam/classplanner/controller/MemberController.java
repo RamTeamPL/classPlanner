@@ -32,9 +32,15 @@ public class MemberController {
     public void deleteMember(@RequestParam int id){
         memberService.deleteMember(id);
     }*/
+    @CrossOrigin("http://localhost:4200")
+    @GetMapping("/announcementByMemberId/{memberId}")
+    public List<Announcement> getAnnouncementByMemberId(@PathVariable int memberId){
+        return memberService.findAnnouncementsByMemberId(memberId);
+    }
 
-    @GetMapping("/announcementByMemberId")
-    public List<Announcement> getAnnouncementbyMemberId(){
-        return memberService.findAnnouncements();
+    @CrossOrigin("http://localhost:4200")
+    @GetMapping("/creatorById")
+    public Member getById(@PathVariable int id){
+        return memberService.findById(id);
     }
 }
