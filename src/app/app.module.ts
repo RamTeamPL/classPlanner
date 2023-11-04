@@ -50,6 +50,8 @@ import {Component} from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import { RegistertwoComponent } from './registertwo/registertwo.component';
 
 
 @NgModule({
@@ -70,6 +72,7 @@ import {FormsModule} from '@angular/forms';
     TripsComponent,
     EachAnnouncementComponent,
     LoginComponent,
+    RegisterComponent,
     TruncatePipe,
     AddAnnouncementComponent,
 
@@ -80,7 +83,8 @@ import {FormsModule} from '@angular/forms';
     AddFundraisersComponent,
       HomeworksComponent,
       AddHomeworkComponent,
-      HomeworkComponent
+      HomeworkComponent,
+      RegistertwoComponent
   ],
   imports: [
     BrowserModule,
@@ -94,7 +98,7 @@ import {FormsModule} from '@angular/forms';
     HttpClientModule],
     [FormsModule, MatFormFieldModule, MatInputModule],
     MatRippleModule,
-    [FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, NgIf]
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
