@@ -13,13 +13,16 @@
             Email jest <strong>wymagany</strong>
           </mat-error>
         </mat-form-field>
+
         <mat-form-field appearance="outline" class="example-full-width" style="margin-top: 25px;">
           <mat-label>Hasło</mat-label>
           <input matInput type="password" matInput [formControl]="passwordFormControl" [errorStateMatcher]="matcher" placeholder="">
         </mat-form-field>
-        <input type="submit" value="Zaloguj się ->">
+        <a routerLink="../profile">
+          <input type="submit" value="Zaloguj się ->">
+        </a>
       </form>
-      <p>Jeśli nie masz konta to <a routerLink="../register">stwórz je</a></p>
+      <p>Jeśli nie masz konta - <a routerLink="../register">stwórz je</a></p>
     </div>
   </div>
   

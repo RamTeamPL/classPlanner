@@ -2,16 +2,14 @@
 {
     position: fixed;
     top: 0px;
-    bottom: 0px;
+    bottom: 0;
     z-index: 10;
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, rgba(0,0,109) 0%, rgb(0, 58, 173) 65%, rgb(24, 3, 147) 100%);
-    padding-bottom: 80px;
-
 }
 
-#bglogin
+#bgregister
 {
     border-bottom: 4px solid rgb(6, 1, 71);
     margin: auto;
@@ -26,37 +24,19 @@
 
 h1
 {
+    letter-spacing: 4px;
     font-size: 30px;
-    letter-spacing: 5px;
-    text-align: center;
-    position: relative;
-    top: 40px;
     background-color: #0D1B31;
-    padding: 10px;
-}
-  
-
-.example-full-width 
-{
-    width: 80%;
     display: block;
-    margin: auto;
-    margin-top: 90px;
-
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 20px;
 }
 
-.example-full-width:focus
-{
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-}
 
-.example-full-width input
-{
-    color: rgb(185, 185, 250);
-}
+
+
 
 input[type="submit"]
 {
@@ -66,8 +46,8 @@ input[type="submit"]
     border-radius: 10px;
     width: 200px;
     padding: 10px;
-    margin-top: 25px;
-    margin-top: 10px;
+    position:relative;
+    top: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -77,31 +57,10 @@ input[type="submit"]
     color: white;
   }
 
-
-input[type="submit"]:active
+  input[type="submit"]:active
 {
     background-color: rgb(6, 104, 165, 50%);
 }
 
-p
-{
-    font-size: 15px;
-    margin-top: 25px;
-    color: white;
-    display: block;
-    text-align: center;
-}
 a {text-decoration: none;}
-
-p > a
-{
-    color: rgb(69, 193, 255);
-    font-size: 17px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-p > a:active
-{
-    color: rgb(166, 225, 255);
-}
+  
