@@ -9,8 +9,8 @@
     <!--Dodawanie nowego ogłoszenia-->
     <h2>Tytuł</h2>
     <form action="" method="get">
-    <input type="text" name="title" id="title" placeholder="Tytuł Ogłoszenia" required>
+    <input type="text" [(ngModel)]="announcement.title" name="title" id="title" placeholder="Tytuł Ogłoszenia" required>
     <h2>Treść</h2>
-    <textarea id="content" name="content" placeholder="Treść Ogłoszenia " rows="10"></textarea> <br>
-    <input type="submit" value="Dodaj"></form>
+    <textarea id="content" [(ngModel)]="announcement.content" name="content" placeholder="Treść Ogłoszenia " rows="10"></textarea> <br>
+    <button type="submit" (click)="addAnnouncement()">Dodaj</button></form>
 </div>
