@@ -1,16 +1,31 @@
-<div id = "container">
-    <img src="assets/img/icons8-back-90.png" routerLink="../"
-    matRipple
-    [matRippleCentered]="true"
-    [matRippleDisabled]="false"
-    [matRippleUnbounded]="false"
-    [matRippleRadius]="10"
-    [matRippleColor]="color">
-    <h2>Zbiórka</h2>
-    <form action="" method="get">
-    <input type="text" name="title" id="title" placeholder="Tytuł" required><br>
-    
-    <input type="text" name="cost" id="cost" placeholder="Kwota na osobę" required><br>
-    Termin zakończenia zbiórki <input type="date" name="data" id="data" required><br>
-    <input type="submit" value="Dodaj"></form>
-</div>
+<div id="container">
+    <div id = "add-homework">
+        <img src="assets/img/icons8-back-90.png" routerLink="../"
+        matRipple
+        [matRippleCentered]="true"
+        [matRippleDisabled]="false"
+        [matRippleUnbounded]="false"
+        [matRippleRadius]="10"
+        [matRippleColor]="color">
+        
+        <h2>Dodaj zadanie</h2>
+            <form action="" method="get">
+                <mat-form-field class="formfield">
+                    <mat-label>Nazwa</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+
+                  <mat-form-field class="formfield">
+                    <mat-label>Kwota na jedną osobę</mat-label>
+                    <input matInput type="number">
+                  </mat-form-field>
+
+                <mat-form-field class="formfield">
+                    <mat-label>Termin</mat-label>
+                    <input type="date" matInput>
+                </mat-form-field><br>
+                
+                
+              <button mat-raised-button color="primary" type="submit">Dodaj</button>
+            </form>
+    </div></div>
