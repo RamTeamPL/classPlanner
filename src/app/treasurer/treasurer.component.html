@@ -5,7 +5,7 @@
     </div>
     
 </div>
-<div id = "add" routerLink="add-fundraisers" routerLinkActive="active-add"
+<div *ngIf="treasurer as true" id = "add" routerLink="add-fundraisers" routerLinkActive="active-add" routerLinkActive=""
 matRipple
 [matRippleCentered]="true"
 [matRippleDisabled]="false"
