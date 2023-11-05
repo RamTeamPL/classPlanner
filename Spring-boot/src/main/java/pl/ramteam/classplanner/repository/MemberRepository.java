@@ -23,6 +23,12 @@ public interface MemberRepository extends JpaRepository<Member, Integer> {
   @Query("Select a FROM Announcement a "+
   "Join GroupMember gm ON a.groupId = gm.groupId " +
   "JOIN Member m ON gm.memberId = m.id " +
-  "Where m.id = :memberId")
+  "Where m.id = :memberId Order by created desc")
   List<Announcement> FindAnnouncementsByMemberId(@Param("memberId") int memberId);
+
+  @Query("Select a FROM Announcement a "+
+    "Join GroupMember gm ON a.groupId = gm.groupId " +
+    "JOIN Member m ON gm.memberId = m.id " +
+    "Where m.id = :memberId Order by created desc limit 1")
+  Announcement FindLastAnnouncementsByMemberId(@Param("memberId") int memberId);
 }

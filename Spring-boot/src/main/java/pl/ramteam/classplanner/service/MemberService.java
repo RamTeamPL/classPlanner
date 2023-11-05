@@ -42,4 +42,8 @@ public class MemberService {
   public Member findById(int id) {
       return memberRepository.findById(id).orElseThrow();
   }
+
+  public Announcement findLastAnnouncementsByMemberId(int memberId) {
+    return memberRepository.FindLastAnnouncementsByMemberId(memberId);
+  }
 }
