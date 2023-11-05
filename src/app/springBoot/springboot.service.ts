@@ -5,9 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class SpringbootService {
   memberId: any = 9;
+  springBootIp: any =  "192.168.1.110";
 
   getMemberId(){
     return this.memberId;
+  }
+
+  getspringBootIp(){
+    return this.springBootIp;
   }
 
   constructor() { }

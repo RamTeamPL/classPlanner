@@ -25,7 +25,7 @@ export class AnnouncementsComponent implements OnInit {
 // ...
 
 ngOnInit() {
-  let response = this.http.get("http://localhost:8080/announcementByMemberId/" + this.spring.getMemberId());
+  let response = this.http.get("http://"+this.spring.getspringBootIp()+":8080/announcementByMemberId/" + this.spring.getMemberId());
   response.subscribe((data:any) => {
     this.announcements = data;
 
