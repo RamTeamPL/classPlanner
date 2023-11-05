@@ -8,13 +8,15 @@
     [matRippleRadius]="10"
     [matRippleColor]="color">
     
-    <h2>Lekcja</h2>
-    <form action="" method="get">
-    <input type="text" name="subject" id="subject" placeholder="Temat" required>
-    <h2>Zdjęcia</h2>
-    <input type="file" id="photos" name="photos" accept="image/png, image/gif, image/jpeg" multiple>
-    <label for="photos">
-        <p>Wybierz zdjęcia</p>
-    </label>
-    <input type="submit" value="Dodaj"></form>
+    <h2>Dodaj notatkę</h2>
+    <form action="" method="get">           
+        <mat-form-field class="formfield">
+            <mat-label>Temat</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <input type="file" id="file" accept="image/png, image/jpeg" multiple><br>
+          <label for="file">Wybierz zdjęcia</label>
+        <br>
+        <button mat-raised-button color="primary" type="submit">Dodaj</button>
+      </form>
 </div></div>

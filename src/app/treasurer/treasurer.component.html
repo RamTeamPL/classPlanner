@@ -1,11 +1,11 @@
 <router-outlet></router-outlet>
 <div id="container">
-    <div class="lesson" routerLink="fundraisers">
+    <div class="box" routerLink="fundraisers">
         <h3>Zbiórka A</h3>
     </div>
     
 </div>
-<div id = "add" routerLink="add-fundraisers" routerLinkActive="active-add"
+<div *ngIf="treasurer as true" id = "add" routerLink="add-fundraisers" routerLinkActive="active-add" routerLinkActive=""
 matRipple
 [matRippleCentered]="true"
 [matRippleDisabled]="false"

@@ -1,13 +1,13 @@
-<div class="box" routerLink="/each-announcement" *ngFor="let announce of announces" (click)="updateId(announce.id)"
+<div class="box" routerLink="/each-announcement" *ngFor="let announcement of announcements" (click)="updateId(announcement.id)"
     matRipple
     [matRippleCentered]="centered"
     [matRippleDisabled]="disabled"
     [matRippleUnbounded]="unbounded"
     [matRippleRadius]="400"
     [matRippleColor]="color">
-    <h3>{{announce.title}}</h3>
+    <h3>{{announcement.title}}</h3> 
     <ul>
-        <p>{{ announce.content | truncate:50 }}</p>
+        <p>{{ announcement.content | truncate:50 }}</p>
     </ul>
 </div>
 

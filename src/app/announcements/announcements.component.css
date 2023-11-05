@@ -16,7 +16,7 @@
 h3{
     color: white;
     background-color: rgba(78, 106, 206, 0.866);
-    height: 40px;
+    padding: 5px;
     text-align: center;
     font-size: x-large;
     font-weight: 500;
@@ -28,24 +28,6 @@ p{
     color: white;
     font-size: large;
     display: block;
-}
-
-#add{
-    color: white;
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    float: right;
-    text-align: center;
-    border-radius: 100%;
-    padding: 10px;
-    font-size: 20px;
-    right: 10px;
-    bottom: 80px;
-    position: fixed;
-    animation: addRotate;
-    animation-duration: 5s;
-
 }
 
 .active-add{

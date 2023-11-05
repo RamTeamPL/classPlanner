@@ -12,12 +12,16 @@ import java.util.List;
 @Repository
 public interface ClassGroupRepository extends JpaRepository<ClassGroup, Integer> {
 
-//    @Query("Select cg From ClassGroup cg" + " left join fetch cg.groupMembers)
     @Query("SELECT m FROM ClassGroup cg " +
             "JOIN cg.groupMembers gm " +
             "JOIN Member m ON gm.memberId = m.id " +
             "WHERE cg.id = :groupId")
     List<Member> FindAllClassGroups(@Param("groupId") int groupId);
 
+
+  @Query("Select cg FROM ClassGroup cg " +
+  "JOIN GroupMember gm ON cg.id = gm.groupId "+
+  "Where gm.memberId = :memberId")
+  ClassGroup findClassGroupByMemberId(@Param("memberId") int memberId);
 }
 

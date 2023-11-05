@@ -5,12 +5,16 @@
     width: 90%;
     height: auto;
     background-color: rgba(7, 58, 71, 0.912);
-    display: block;
     margin: auto;
     padding-top: 9px;
     margin-top: 10px;
     padding-bottom: 7px;
     border-radius: 10px;
+}
+
+#inside{
+    text-align: center;
+    padding: 5px;
 }
 
 h3{
@@ -28,16 +32,8 @@ h3{
 p{
     color: white;
     font-size: large;
-    display: block;
 }
 
-pre{
-    color: white;
-    font-size: large;
-    display: block;
-}
-
-ul{
-    display: flex;
-    align-items: center; 
+button{
+    margin: 0 5px;
 }

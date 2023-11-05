@@ -16,4 +16,12 @@ public class AnnouncementService {
     public List<Announcement> findAllByGroupId(int groupId){
         return announcementRepository.findAllByGroupId(groupId);
     }
+
+  public Announcement findById(int id) {
+      return announcementRepository.findById(id).orElseThrow();
+  }
+
+  public Announcement addAnnouncement(Announcement announcement) {
+    return announcementRepository.save(announcement);
+  }
 }

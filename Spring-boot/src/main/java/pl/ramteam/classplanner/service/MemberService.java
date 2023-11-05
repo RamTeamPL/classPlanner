@@ -3,6 +3,8 @@ package pl.ramteam.classplanner.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import pl.ramteam.classplanner.model.Announcement;
+import pl.ramteam.classplanner.model.GroupMember;
 import pl.ramteam.classplanner.model.Member;
 import pl.ramteam.classplanner.repository.MemberRepository;
 
@@ -33,4 +35,24 @@ public class MemberService {
     public void deleteMember(int id) {
         memberRepository.deleteById(id);
     }
+
+  public List<Announcement> findAnnouncementsByMemberId(int memberId){
+      return memberRepository.FindAnnouncementsByMemberId(memberId);
+  }
+
+  public Member findById(int id) {
+      return memberRepository.findById(id).orElseThrow();
+  }
+
+  public Announcement findLastAnnouncementsByMemberId(int memberId) {
+    return memberRepository.FindLastAnnouncementsByMemberId(memberId);
+  }
+
+  public List<Member> findStudentCouncilByMemberId(int memberId) {
+    return memberRepository.findStudentCouncilByMemberId(memberId);
+  }
+
+  public GroupMember findRoleIdByMemberId(int memberId) {
+    return memberRepository.findRoleIdByMemberId(memberId);
+  }
 }

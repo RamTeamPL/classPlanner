@@ -10,3 +10,43 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
 }
+
+.box{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: rgba(55, 55, 184, 0.616);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgb(38, 38, 116);
+}
+
+#add{
+    color: white;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    float: right;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 20px;
+    right: 10px;
+    bottom: 80px;
+    position: fixed;
+    animation: addAppear;
+    animation-duration: 0.2s;
+    overflow: hidden;
+
+}
+
+@keyframes addAppear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 100;
+        transform: scale(1);
+    }
+}

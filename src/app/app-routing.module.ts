@@ -23,6 +23,8 @@ import { AddHomeworkComponent } from './add-homework/add-homework.component';
 import { HomeworkComponent } from './homework/homework.component';
 import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
 import { RegisterComponent } from './register/register.component';
+import { ElectionsComponent } from './elections/elections.component';
+
 //import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
 
 
@@ -92,25 +94,29 @@ const routes: Routes = [
             path: 'addNote',
             component: AddNoteComponent
           },
-          {
-            path: 'lesson',
-            component: LessonComponent
-          },
         ]
       },
       {
+        path: 'lesson',
+        component: LessonComponent
+      },
+      {
         path: "homeworks",
-        component: HomeworkComponent,
+        component: HomeworksComponent,
         children: [
           {
             path: 'addHomework',
             component: AddHomeworkComponent
           },
-          {
-            path: 'homework',
-            component: HomeworkComponent
-          }
         ]
+      },
+      {
+        path: 'homework',
+        component: HomeworkComponent
+      },
+      {
+        path: 'elections',
+        component: ElectionsComponent
       },
       {
         path: 'trips',

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-treasurer',
@@ -7,8 +8,11 @@ import { Component } from '@angular/core';
   
   
 })
-export class TreasurerComponent {
+export class TreasurerComponent{
   panelOpenState = true;
   color = "rgba(114, 114, 114, 0.495)"
+  elementToHide: any;
+
+  treasurer = true;
 }
 

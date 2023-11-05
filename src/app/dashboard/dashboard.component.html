@@ -6,39 +6,26 @@
         [matRippleUnbounded]="unbounded"
         [matRippleRadius]="400"
         [matRippleColor]="color">
-        <h3>Ogloszenia</h3>
-        <p>Ogloszenia/Ogłoszenia</p>
-        <p>Ogloszenia/Ogłoszenia</p>
+        <h3>Ostatnie ogłoszenie</h3>
+        <p>{{announcement.title}}</p>
     </div>
 
-    <div class="box" routerLink="fundraisers"
+    <div class="box" routerLink="treasurer"
         matRipple
         [matRippleCentered]="centered"
         [matRippleDisabled]="disabled"
         [matRippleUnbounded]="unbounded"
         [matRippleRadius]="400"
         [matRippleColor]="color">
-        <h3>Trwające zbiórki</h3>
-        <p>Ogloszenia/Ogłoszenia</p>
-        <p>Ogloszenia/Ogłoszenia</p>
+        <h3>Ostatnie zbiórka</h3>
+        <p>Zbiórka/Zbiórka</p>
     </div>
         
-    <div class="box" routerLink="trips"
-        matRipple
-        [matRippleCentered]="centered"
-        [matRippleDisabled]="disabled"
-        [matRippleUnbounded]="unbounded"
-        [matRippleRadius]="400"
-        [matRippleColor]="color">
-        <h3>Wycieczki</h3>
-        <p>Ogloszenia/Ogłoszenia</p>
-        <p>Ogloszenia/Ogłoszenia</p>
-    </div>
 
     <div class="box">
         <h3>Samorząd klasowy</h3>
-        <p>Przewodniczący: John Doe</p>
-        <p>Zastępca przewodniczącego: John Doe</p>
-        <p>Skarbnik: John Doe</p>
+        <p>Przewodniczący: {{studentCouncil[0].name}} {{studentCouncil[0].surname}}</p>
+        <p>Zastępca przewodniczącego: {{studentCouncil[1].name}} {{studentCouncil[1].surname}}</p>
+        <p>Skarbnik: {{studentCouncil[2].name}} {{studentCouncil[2].surname}}</p>
     </div>
 </div>
