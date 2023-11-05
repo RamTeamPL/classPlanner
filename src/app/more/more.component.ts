@@ -9,6 +9,9 @@ export class MoreComponent {
   centered = false;
   disabled = false;
   unbounded = false;
+
+  elections = true;
+
   color = "rgba(114, 114, 114, 0.495)";
   users = [
     {id: 0, name: 'Bartek', lastname: 'Olszyński', avatar:'../assets/img/icons8-male-user-96.png'},

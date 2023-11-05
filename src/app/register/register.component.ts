@@ -14,6 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 export class RegisterComponent {
   email = new FormControl('', [Validators.required, Validators.email]);
   name = new FormControl('', [Validators.required]);
+  
 
   getErrorMessage() {
     if (this.name.hasError('required')) {
@@ -26,5 +27,7 @@ export class RegisterComponent {
 
     return this.email.hasError('email') ? 'Nieprawidłowy e-mail' : '';
   }
+  hide = true;
 
+  
 }
