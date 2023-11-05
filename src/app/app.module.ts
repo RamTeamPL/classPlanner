@@ -52,6 +52,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import { ElectionsComponent } from './elections/elections.component';
+import {NgFor} from '@angular/common';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -99,7 +101,8 @@ import { ElectionsComponent } from './elections/elections.component';
     [FormsModule, MatFormFieldModule, MatInputModule],
     MatRippleModule,
     MatSelectModule,
-    MatRadioModule
+    MatRadioModule,
+    [MatCheckboxModule, NgFor, FormsModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

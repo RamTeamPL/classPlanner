@@ -59,12 +59,12 @@ const routes: Routes = [
           {
             path: 'add-fundraisers',
             component: AddFundraisersComponent
-          },
-          {
-            path: 'fundraisers',
-            component: FundraisersComponent
-          },
+          }
         ]
+      },
+      {
+        path: 'fundraisers',
+        component: FundraisersComponent
       },
       {
         path: 'more',
