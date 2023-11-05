@@ -18,17 +18,16 @@ export class ProfileComponent {
 
 
   ngOnInit() { //nie komentować metody
-    let response = this.http.get("http://localhost:8080/creatorById/" + this.spring.getMemberId());           //do testów zakomentować ciało
+    let response = this.http.get("http://"+this.spring.getspringBootIp()+":8080/creatorById/" + this.spring.getMemberId());           //do testów zakomentować ciało
     response.subscribe((data) => this.member = data);
 
-    let response2 = this.http.get("http://localhost:8080/getClassGroupByMemberId/" + this.spring.getMemberId());           //do testów zakomentować ciało
+    let response2 = this.http.get("http://"+this.spring.getspringBootIp()+":8080/getClassGroupByMemberId/" + this.spring.getMemberId());           //do testów zakomentować ciało
     response2.subscribe((data) => this.classGroup = data);
 
-    let response3 = this.http.get("http://localhost:8080/getRoleIdByMemberId/" + this.spring.getMemberId());           //do testów zakomentować ciało
+    let response3 = this.http.get("http://"+this.spring.getspringBootIp()+":8080/getRoleIdByMemberId/" + this.spring.getMemberId());           //do testów zakomentować ciało
     response3.subscribe((data) =>{
       this.role = data;
-      console.log(this.role[0]);
-      switch(this.role[0].roleId){
+      switch(this.role.roleId){
         case 1: this.role = "Przewodniczący"; break;
         case 2: this.role = "Zastępca przewodniczącego"; break;
         case 3: this.role = "Skarbnik"; break;
