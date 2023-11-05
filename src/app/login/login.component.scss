@@ -35,6 +35,7 @@
 
 ::ng-deep .mdc-text-field
 {
+    border-radius: 5px;
     background-color: whitesmoke;
     color: rgb(0, 0, 92);
 }
@@ -44,3 +45,9 @@
     border-radius: 5px;
     padding-top: 8px;
 }
+
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input
+{
+    color: rgb(4, 0, 67) !important;
+}
+

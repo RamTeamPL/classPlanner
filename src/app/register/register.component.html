@@ -1,1 +1,45 @@
-<p>register works!</p>
+<style>
+    div.registerOne:first-child{
+        margin-top: 55px;
+    }
+</style>
+
+
+<div id="bg">
+    <div id="bgregister">
+        <h1>Rejestracja</h1>
+        <form class="example-form">
+            <div class="registerOne">
+                <mat-form-field>
+                    <mat-label>Imię</mat-label>
+                    <input type="text" matInput maxlength="15" [formControl]="name">
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="registerOne">
+                <mat-form-field>
+                    <mat-label>Nazwisko</mat-label>
+                    <input type="text" matInput maxlength="25" [formControl]="name">
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="registerOne">
+                <mat-form-field>
+                  <mat-label>E-mail</mat-label>
+                  <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+                <a routerLink="../registertwo">
+                    <input type="submit" value="Przejdź dalej ->">
+                </a>
+        </form>
+
+        <p>Jeśli masz już konto - <a routerLink="../login">zaloguj się</a></p>
+          
+
+       
+    </div>
+</div>

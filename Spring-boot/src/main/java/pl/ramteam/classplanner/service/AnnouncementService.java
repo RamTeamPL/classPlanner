@@ -20,4 +20,8 @@ public class AnnouncementService {
   public Announcement findById(int id) {
       return announcementRepository.findById(id).orElseThrow();
   }
+
+  public Announcement addAnnouncement(Announcement announcement) {
+    return announcementRepository.save(announcement);
+  }
 }

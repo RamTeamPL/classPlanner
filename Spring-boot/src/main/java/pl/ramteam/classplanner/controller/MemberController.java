@@ -44,9 +44,10 @@ public class MemberController {
     return memberService.findLastAnnouncementsByMemberId(memberId);
   }
 
+  
   @CrossOrigin("http://localhost:4200")
   @GetMapping("/creatorById/{id}")
-  public Member getById(@PathVariable int id){
+    public Member getById(@PathVariable int id){
         return memberService.findById(id);
     }
 }

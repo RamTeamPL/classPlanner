@@ -27,7 +27,7 @@ export class EachAnnouncementComponent {
     let response = this.http.get("http://localhost:8080/announcementById/" + this.id);
     response.subscribe((data) => {
       this.announcement = data;
-      let response2 = this.http.get("http://localhost:8080/creatorById/" + this.announcement.creatorId);
+      let response2 = this.http.get("http://localhost:8080/creatorById/" + this.announcement.creatorId); //do stylowania komentować tylko ciało
       response2.subscribe((data2) => this.member = data2);
     });
   }

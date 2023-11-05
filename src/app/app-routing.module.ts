@@ -23,6 +23,7 @@ import { AddHomeworkComponent } from './add-homework/add-homework.component';
 import { HomeworkComponent } from './homework/homework.component';
 import { AddAnnouncementComponent } from './add-announcement/add-announcement.component';
 import { RegisterComponent } from './register/register.component';
+import { RegistertwoComponent } from './registertwo/registertwo.component';
 //import { AddAnnouncementComponent } from './announcements/add-announcement/add-announcement.component';
 
 
@@ -80,7 +81,10 @@ const routes: Routes = [
         path: 'register',
         component: RegisterComponent
       },
-
+      {
+        path: 'registertwo',
+        component: RegistertwoComponent
+      },
       {
         path: 'settings',
         component: SettingsComponent
