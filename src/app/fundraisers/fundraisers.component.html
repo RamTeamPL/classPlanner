@@ -1,35 +1,27 @@
 <div id = "container">
     
-    <div id="fundraisers">
         
-        <img src="assets/img/icons8-back-90.png" routerLink="../" width="50px" height="50px">
-        <h1 style="background-color: #0D1B31;">Zbiórka A</h1><!--uzupełniaj z bazy-->
-        <p>Dane:</p>
-       <div>Wpłaciło 14/21 osób</div><!--grupa z bazy--> <div>Kwota na osobę:2zł</div><!--kwota z bazy-->                  <div> Zebrano: 28zł/42zł</div><!--niech springboot to liczy-->
-        <div id="line"></div>
-        <p>Wpłaciłi(y):</p><!--generuj z bazy-->
+        <img src="assets/img/icons8-back-90.png" routerLink="/treasurer" width="50px" height="50px">
+        <h1>Zbiórka A</h1><!--uzupełniaj z bazy-->
+        <h4>Wpłaciło 14/21 osób<!--grupa z bazy--><br>Kwota na osobę:2zł<!--kwota z bazy--><br>Zebrano: 28zł/42zł</h4><!--niech springboot to liczy-->
+        <h3>Nie wpłacili:</h3><!--generuj z bazy-->
         
-        <p class="people" style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input  *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people" style="background-color:  #0A1C38;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-        <p class="people"style="background-color: #071C3E;"> Carlos <input *ngIf="treasurer as true" type="checkbox" name="people" class="people"></p>
-             
-    </div>
+        <form action="" method="post">
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+            <p>Carlos<mat-checkbox *ngIf="treasurer as true" [checked]="false" [color]="color"> </mat-checkbox></p>
+
+            <br><button *ngIf="treasurer as true" mat-raised-button color="primary" type="submit">Dodaj</button>
+        </form>
 </div>
