@@ -22,11 +22,16 @@ export class EachAnnouncementComponent {
 
   announcement :any;
   member:any;
+  formattedDate :any;
 
   ngOnInit() {
     let response = this.http.get("http://"+this.spring.getspringBootIp()+":8080/announcementById/" + this.id);
     response.subscribe((data) => {
       this.announcement = data;
+      
+      const complexDate = new Date(this.announcement.created);
+      this.formattedDate = complexDate.toLocaleString();
+
       let response2 = this.http.get("http://"+this.spring.getspringBootIp()+":8080/creatorById/" + this.announcement.creatorId); //do stylowania komentować tylko ciało
       response2.subscribe((data2) => this.member = data2);
     });
