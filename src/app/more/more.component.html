@@ -8,3 +8,12 @@
         <h3>Podania o dołączenie do grupy</h3>
         <p *ngFor="let user of users.slice(0,2)">{{user.name}} {{user.lastname}}</p>
     </div>
+<div *ngIf="elections as true" class="box" routerLink="/elections"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="400"
+    [matRippleColor]="color">
+    <h3>Wybory do samorządu</h3>
+</div>

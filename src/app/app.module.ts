@@ -36,7 +36,7 @@ import { AddAnnouncementComponent } from './add-announcement/add-announcement.co
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LessonComponent } from './lesson/lesson.component';
-
+import {MatRadioModule} from '@angular/material/radio';
 import { NewClassmateComponent } from './new-classmate/new-classmate.component';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
@@ -52,6 +52,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import { RegistertwoComponent } from './registertwo/registertwo.component';
+import { ElectionsComponent } from './elections/elections.component';
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import { RegistertwoComponent } from './registertwo/registertwo.component';
       HomeworksComponent,
       AddHomeworkComponent,
       HomeworkComponent,
-      RegistertwoComponent
+      RegistertwoComponent,
+      ElectionsComponent
   ],
   imports: [
     BrowserModule,
@@ -99,6 +101,7 @@ import { RegistertwoComponent } from './registertwo/registertwo.component';
     [FormsModule, MatFormFieldModule, MatInputModule],
     MatRippleModule,
     MatSelectModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
