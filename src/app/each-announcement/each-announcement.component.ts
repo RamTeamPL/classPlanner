@@ -23,11 +23,12 @@ export class EachAnnouncementComponent {
   announcement :any;
   member:any;
 
-  ngOnInit() { //nie komentować metody
-    let response = this.http.get("http://localhost:8080/announcementById/" + this.id);           //do testów zakomentować ciało
-    response.subscribe((data) => this.announcement = data);
-
-    let response2 = this.http.get("http://localhost:8080/announcementById/" + this.announcement.creatorId);           //do testów zakomentować ciało
-    response2.subscribe((data) => this.announcement = data);
- }
+  ngOnInit() {
+    let response = this.http.get("http://localhost:8080/announcementById/" + this.id);
+    response.subscribe((data) => {
+      this.announcement = data;
+      let response2 = this.http.get("http://localhost:8080/creatorById/" + this.announcement.creatorId);
+      response2.subscribe((data2) => this.member = data2);
+    });
+  }
 }

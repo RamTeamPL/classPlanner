@@ -18,12 +18,12 @@ export class DashboardComponent implements OnInit{
 
   constructor(private http:HttpClient, private spring:SpringbootService ){ }
 
-  announcements:any; // do testów to zakomentować
+  announcement:any; // do testów to zakomentować
 
 
    ngOnInit() { //nie komentować metody
-      let response = this.http.get("http://localhost:8080/announcementByMemberId/" + this.spring.getMemberId());           //do testów zakomentować ciało
-      response.subscribe((data) => this.announcements = data);
+      let response = this.http.get("http://localhost:8080/announcementByMemberIdOrderBy/" + this.spring.getMemberId());           //do testów zakomentować ciało
+      response.subscribe((data) => this.announcement = data);
    }
    
 }

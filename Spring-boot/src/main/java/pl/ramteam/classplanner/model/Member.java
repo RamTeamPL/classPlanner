@@ -10,7 +10,7 @@ import java.sql.Blob;
 @Setter
 @Entity
 @Table(name = "member")
-public class Member {
+public class  Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
