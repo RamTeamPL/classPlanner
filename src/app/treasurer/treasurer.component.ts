@@ -13,6 +13,6 @@ export class TreasurerComponent{
   color = "rgba(114, 114, 114, 0.495)"
   elementToHide: any;
 
-  treasurer = false;
+  treasurer = true;
 }
 

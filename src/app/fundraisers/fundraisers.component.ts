@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   
 })
 export class FundraisersComponent {
-  treasurer = false;
+  treasurer = true;
 }
 
