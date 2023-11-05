@@ -17,4 +17,8 @@ public class ClassGroupService {
     public List<Member> getGroups(int groupId){
         return classGroupRepository.FindAllClassGroups(groupId);
     }
+
+    public ClassGroup findClassGroupByMemberId(int memberId){
+      return classGroupRepository.findClassGroupByMemberId(memberId);
+    }
 }
