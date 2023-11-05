@@ -10,7 +10,7 @@
     margin-left: 4%;
     margin-right: 4%;
     width: 90%;
-    height: 350px;
+    height: 320px;
     border-radius: 20px;
     background-color: rgb(28, 28, 93);
     z-index: 1;
@@ -52,6 +52,6 @@ input[type="submit"]{
 
 @keyframes slide{
     from{height: 0px;}
-    to{height: 350px;}
+    to{height: 320px;}
 }
 
