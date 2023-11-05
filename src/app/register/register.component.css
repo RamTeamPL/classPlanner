@@ -1,19 +1,20 @@
 #bg
 {
-    position: fixed;
+    position: absolute;
     top: 0px;
     bottom: 0;
-    z-index: 10;
+    z-index: 999;
+    min-height: 200%;
     width: 100%;
-    height: 100%;
     background: linear-gradient(90deg, rgba(0,0,109) 0%, rgb(0, 58, 173) 65%, rgb(24, 3, 147) 100%);
 }
 
 #bgregister
 {
+    position: sticky;
+    top: 30px;
     border-bottom: 4px solid rgb(6, 1, 71);
     margin: auto;
-    margin-top: 50px;
     width: 90%;
     height: 450px;
     background-color: rgb(0, 29, 74, 70%);
@@ -31,7 +32,7 @@ h1
     text-align: center;
     padding: 10px;
     position: relative;
-    top: 20px;
+    top: 7px;
 }
   
   .example-full-width {
@@ -58,7 +59,7 @@ input[type="submit"]
     border-radius: 10px;
     width: 200px;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -68,14 +69,14 @@ input[type="submit"]
     color: white;
   }
 
-  input[type="submit"]:active
+input[type="submit"]:active
 {
     background-color: rgb(6, 104, 165, 50%);
 }
 
 div.registerOne
 {
-    margin-top: 0px;
+    margin-top: -15px;
 }
 
 p
@@ -84,7 +85,7 @@ p
     margin:auto;
     text-align: center;
     position: relative;
-    top: 20px;
+    top: 10px;
     font-weight: 400;
     font-size: 15px;
 }

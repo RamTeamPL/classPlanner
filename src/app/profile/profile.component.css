@@ -9,6 +9,7 @@
     background-color: rgb(0, 29, 74, 70%);
     border-radius: 8px;
     border-bottom: 5px solid #071C3E;
+    max-width: 600px;
 }
 
 img.profileimg
@@ -29,6 +30,12 @@ div.user
     background-color: #0D1B31;
 }
 
+p.text
+{
+    width: 80px;
+    display: inline-block;
+}
+
 div.allinfo
 {
     color: rgb(221, 221, 221);
@@ -39,39 +46,42 @@ div.firstname
 {
     margin-top: 20px;
     padding: 10px;
+    padding-bottom: 0px;
     background-color: #071C3E;
 }
 
 div.firstname > span
 {
-    position: absolute;
-    left: 30%;
+    position: relative;
+    left: 10%;
 }
 
 div.lastname
 {
     margin-top: 3px;
     padding: 10px;
+    padding-bottom: 0px;
     background-color: #0A1C38;
 }
 
 div.lastname > span
 {
-    position: absolute;
-    left: 30%;
+    position: relative;
+    left: 10%;
 }
 
 div.class
 {
     margin-top: 3px;
     padding: 10px;
+    padding-bottom: 0px;
     background-color: #071C3E;
 }
 
 div.class > span
 {
-    position: absolute;
-    left: 30%;
+    position: relative;
+    left: 10%;
 }
 
 div.mail
@@ -79,6 +89,7 @@ div.mail
     font-size: 14px;
     margin-top: 3px;
     padding: 8px;
+    padding-bottom: 0px;
     background-color: #0A1C38;
 
     
@@ -86,13 +97,13 @@ div.mail
 
 div.mail > span
 {
-    position: absolute;
-    left: 30%;
+    position: relative;
+    left: 10%;
 }
 
 section {
     display: table;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -124,6 +135,8 @@ section {
     justify-content: center;
     width: 120px;
   }
+
+
 
   
 

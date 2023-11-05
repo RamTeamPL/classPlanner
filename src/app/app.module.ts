@@ -51,7 +51,6 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
-import { RegistertwoComponent } from './registertwo/registertwo.component';
 import { ElectionsComponent } from './elections/elections.component';
 
 
@@ -85,7 +84,6 @@ import { ElectionsComponent } from './elections/elections.component';
       HomeworksComponent,
       AddHomeworkComponent,
       HomeworkComponent,
-      RegistertwoComponent,
       ElectionsComponent
   ],
   imports: [
