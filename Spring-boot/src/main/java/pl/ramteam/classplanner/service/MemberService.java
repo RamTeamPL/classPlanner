@@ -46,4 +46,8 @@ public class MemberService {
   public Announcement findLastAnnouncementsByMemberId(int memberId) {
     return memberRepository.FindLastAnnouncementsByMemberId(memberId);
   }
+
+  public List<Member> findStudentCouncilByMemberId(int memberId) {
+    return memberRepository.findStudentCouncilByMemberId(memberId);
+  }
 }
