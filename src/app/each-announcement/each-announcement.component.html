@@ -1,8 +1,5 @@
 <div class="box" routerLink="/each-announcement">
-    <h3>{{member.name}}</h3>
-    <h3>{{member.surname}}:</h3>
-    <h3>{{announcement.title}}</h3>
-    <h3>{{announcement.created}}</h3>
+    <h3>{{member.name}} {{member.surname}}: {{announcement.title}} {{formattedDate}}</h3>
     <ul>
         <p>{{announcement.content}}</p>
         
