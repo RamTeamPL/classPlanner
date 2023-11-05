@@ -3,11 +3,11 @@
     <img class="profileimg" src="assets/img/icons8-male-user-96.png" width="100px" height="100px" alt="IkonaProfilu">
 
     <div class="allinfo">
-        <div class="user">Nazwa użytkownika</div> <!--Imie i nazwisko-->
-        <div class="firstname">Imię:<span>Wierzchosława</span></div> <!--Imie-->
-        <div class="lastname">Nazwisko:<span>Rostworowska</span></div> <!--Nazwisko-->
-        <div class="class">Klasa:<span>3 TP</span></div> <!--Klasa-->
-        <div class="mail">E-mail: <span>anna.trebacz.zst@gmail.com</span></div> <!--Adres e-mail-->
+        <div class="user">{{member.name}} {{member.surname}} </div> <!--Imie i nazwisko-->
+        
+        <div class="class">Klasa:<span>{{classGroup.name}}</span></div> <!--Klasa-->
+        <div class="mail">E-mail: <span>{{member.email}}</span></div> <!--Adres e-mail-->
+        <div class="mail">Rola: <span>{{role}}</span></div> <!--Adres e-mail-->
     </div>
 
     <mat-divider></mat-divider>

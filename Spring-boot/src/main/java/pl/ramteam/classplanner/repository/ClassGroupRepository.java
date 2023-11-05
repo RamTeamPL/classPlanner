@@ -18,5 +18,10 @@ public interface ClassGroupRepository extends JpaRepository<ClassGroup, Integer>
             "WHERE cg.id = :groupId")
     List<Member> FindAllClassGroups(@Param("groupId") int groupId);
 
+
+  @Query("Select cg FROM ClassGroup cg " +
+  "JOIN GroupMember gm ON cg.id = gm.groupId "+
+  "Where gm.memberId = :memberId")
+  ClassGroup findClassGroupByMemberId(@Param("memberId") int memberId);
 }
 
