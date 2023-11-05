@@ -16,11 +16,12 @@
     border-bottom: 4px solid rgb(6, 1, 71);
     margin: auto;
     width: 90%;
-    height: 450px;
+    height: auto;
     background-color: rgb(0, 29, 74, 70%);
     color: white;
     border-radius: 8px;
     max-width: 600px;
+    padding-bottom: 22px; 
 }
 
 h1
