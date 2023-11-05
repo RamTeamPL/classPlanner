@@ -51,7 +51,6 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
-import { RegistertwoComponent } from './registertwo/registertwo.component';
 
 
 @NgModule({
@@ -84,7 +83,6 @@ import { RegistertwoComponent } from './registertwo/registertwo.component';
       HomeworksComponent,
       AddHomeworkComponent,
       HomeworkComponent,
-      RegistertwoComponent
   ],
   imports: [
     BrowserModule,
