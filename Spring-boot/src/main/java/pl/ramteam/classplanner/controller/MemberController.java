@@ -44,10 +44,16 @@ public class MemberController {
     return memberService.findLastAnnouncementsByMemberId(memberId);
   }
 
-  
+
   @CrossOrigin("http://localhost:4200")
   @GetMapping("/creatorById/{id}")
     public Member getById(@PathVariable int id){
         return memberService.findById(id);
     }
+
+  @CrossOrigin("http://localhost:4200")
+  @GetMapping("/getStudentCouncil/{memberId}")
+  public List<Member> getStudentCouncilByMemberId(@PathVariable int memberId){
+      return memberService.findStudentCouncilByMemberId(memberId);
+  }
 }
