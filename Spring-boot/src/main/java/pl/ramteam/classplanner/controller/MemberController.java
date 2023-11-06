@@ -63,4 +63,10 @@ public class MemberController {
   public GroupMember getRoleIdByMemberId(@PathVariable int memberId){
     return memberService.findRoleIdByMemberId(memberId);
   }
+
+  @CrossOrigin("http://localhost:4200")
+  @GetMapping("/getGroupMembersByMemberId/{memberId}")
+  public List<Member> getGroupMembersByMemberId(@PathVariable int memberId){
+    return memberService.findGroupMembersByMemberId(memberId);
+  }
 }
