@@ -4,18 +4,22 @@
 .box{
     width: 90%;
     height: auto;
-    background-color: rgba(7, 58, 71, 0.912);
+    background-color: rgb(0, 29, 74, 70%);
     display: block;
     margin: auto;
     padding-top: 9px;
     margin-top: 10px;
     padding-bottom: 7px;
     border-radius: 10px;
+
+    -webkit-box-shadow: 0px 1px 15px 0px rgb(0, 10, 116);
+    -moz-box-shadow: 0px 1px 15px 0px rgb(0, 10, 116);
+    box-shadow: 0px 1px 15px 0px rgb(0, 10, 116);
 }
 
 h3{
-    color: white;
-    background-color: rgba(78, 106, 206, 0.866);
+    color: rgb(235, 235, 235);
+    background-color: #071C3E;
     padding: 5px;
     text-align: center;
     font-size: x-large;
@@ -25,7 +29,7 @@ h3{
 }
 
 p{
-    color: white;
+    color: rgb(246, 246, 246);
     font-size: large;
     display: block;
 }
