@@ -49,8 +49,9 @@ img:first-child{
 
 p{
     float: left;
-    width: 78%;
+    width: auto;
     margin: 0;
+    padding-left: 1%;
 }
 
 mat-checkbox{
