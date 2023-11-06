@@ -1,3 +1,8 @@
+#container
+{
+    padding-bottom: 80px;
+}
+
 #bgacc
 {
     border-top: 4px solid #071C3E;
@@ -10,6 +15,7 @@
     border-radius: 8px;
     border-bottom: 5px solid #071C3E;
     max-width: 600px;
+    margin-bottom: 80px;
 }
 
 img.profileimg
