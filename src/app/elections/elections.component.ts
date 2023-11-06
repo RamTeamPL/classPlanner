@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./elections.component.css']
 })
 export class ElectionsComponent {
-
+  color="primary"
 }

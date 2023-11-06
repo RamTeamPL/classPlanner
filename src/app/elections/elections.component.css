@@ -29,20 +29,26 @@ img:first-child{
     position: sticky;
 }
 
-p{
-    background-color: rgb(66, 66, 153);
-    padding: 3px;
-    margin: 1%;
-    border-radius: 5px;
-    height: auto;
+.person{
+    background-color: rgba(55, 55, 96, 0.566);
     width: 46%;
     display: inline-block;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgb(23, 23, 66);
+    padding: 1%;
+}
+
+p{
+    float: left;
+    width: auto;
+    margin: 0;
+    padding-left: 1%;
 }
 
 mat-radio-button{
-    display: inline-block;
-    margin-right: 30px;
-    
+    float: right;
+    margin-top: 0.5%;
 }
 
 button{
