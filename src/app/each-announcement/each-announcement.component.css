@@ -4,17 +4,21 @@
 .box{
     width: 90%;
     height: auto;
-    background-color: rgba(7, 58, 71, 0.912);
+    background-color: rgb(0, 29, 74, 70%);
     margin: auto;
     padding-top: 9px;
     margin-top: 10px;
     padding-bottom: 7px;
     border-radius: 10px;
+
+    -webkit-box-shadow: 0px 1px 15px 0px rgb(0, 10, 116);
+    -moz-box-shadow: 0px 1px 15px 0px rgb(0, 10, 116);
+    box-shadow: 0px 1px 15px 0px rgb(0, 10, 116);
 }
 
 #header{
-    color: white;
-    background-color: rgba(78, 106, 206, 0.866);
+    color: rgb(203, 203, 203);
+    background-color: #0c1f3d;
 }
 
 h3{
