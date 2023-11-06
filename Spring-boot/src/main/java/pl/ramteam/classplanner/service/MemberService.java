@@ -55,4 +55,8 @@ public class MemberService {
   public GroupMember findRoleIdByMemberId(int memberId) {
     return memberRepository.findRoleIdByMemberId(memberId);
   }
+
+  public List<Member> findGroupMembersByMemberId(int memberId) {
+    return memberRepository.findGroupMembersByMemberId(memberId);
+  }
 }

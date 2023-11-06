@@ -19,28 +19,14 @@ export class AnnouncementsComponent implements OnInit {
 
   constructor(private http:HttpClient, private spring:SpringbootService ){ }
 
-  members:any;
   announcements: any[] = [];
 
-// ...
 
 ngOnInit() {
   let response = this.http.get("http://"+this.spring.getspringBootIp()+":8080/announcementByMemberId/" + this.spring.getMemberId());
-  response.subscribe((data:any) => {
-    this.announcements = data;
-
-    
-
-  });
+  response.subscribe((data:any) => this.announcements = data);
 }
 
-// getMember(creatorId: number): any {
-//   let response2 = this.http.get("http://localhost:8080/creatorById/" + creatorId);
-//   response2.subscribe((data2) => {
-//     this.members = data2;
-//     return this.members;
-//   });
-// }
 
 
   

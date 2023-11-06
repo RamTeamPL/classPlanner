@@ -32,9 +32,19 @@ public interface MemberRepository extends JpaRepository<Member, Integer> {
     "JOIN ClassGroup cg ON gm.groupId = cg.id " +
     "WHERE gm.roleId IN (1, 2, 3) " +
     "AND gm.groupId = (SELECT gm2.groupId FROM GroupMember gm2 WHERE gm2.memberId = :memberId)")
-  List<Member> findStudentCouncilByMemberId(int memberId);
+  List<Member> findStudentCouncilByMemberId(@Param("memberId") int memberId);
 
 
   @Query("Select gm FROM GroupMember gm Where gm.memberId = :memberId")
-  GroupMember findRoleIdByMemberId(int memberId);
+  GroupMember findRoleIdByMemberId(@Param("memberId")int memberId);
+
+  /*@Query("Select DISTINCT m FROM Member m "+
+  "JOIN GroupMember gm ON m.id = gm.memberId "+
+  "Where gm.groupId = (Select gm.groupId FROM GroupMember where gm.memberId = :memberId)")*/
+
+  @Query("SELECT DISTINCT m FROM Member m " +
+    "JOIN GroupMember gm ON m.id = gm.memberId " +
+    "JOIN ClassGroup cg ON gm.groupId = cg.id " +
+    "Where gm.groupId = (SELECT gm2.groupId FROM GroupMember gm2 WHERE gm2.memberId = :memberId)")
+  List<Member> findGroupMembersByMemberId(@Param("memberId")int memberId);
 }
