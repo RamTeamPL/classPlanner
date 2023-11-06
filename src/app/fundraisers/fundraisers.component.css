@@ -37,14 +37,25 @@ img:first-child{
     position: sticky;
 }
 
-p{
+.person{
     background-color: rgba(55, 55, 96, 0.566);
-    padding: 1%;
     width: 46%;
     display: inline-block;
     margin: 1%;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px rgb(23, 23, 66);
+    padding: 1%;
+}
+
+p{
+    float: left;
+    width: 78%;
+    margin: 0;
+}
+
+mat-checkbox{
+    float: right;
+    margin-top: 0.5%;
 }
 
 button{
