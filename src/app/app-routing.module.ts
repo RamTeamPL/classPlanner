@@ -39,11 +39,13 @@ const routes: Routes = [
       },
       {
         path: 'announcements',
-        component: AnnouncementsComponent
-      },
-      {
-        path: 'add-announcement',
-        component: AddAnnouncementComponent
+        component: AnnouncementsComponent,
+        children: [
+          {
+            path: 'add-announcement',
+            component: AddAnnouncementComponent
+          }
+        ]
       },
       {
         path: 'each-announcement',
