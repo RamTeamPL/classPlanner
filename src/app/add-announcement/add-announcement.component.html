@@ -1,4 +1,5 @@
 <div id = "container">
+    <div id="add-announcement">
     <img src="assets/img/icons8-back-90.png" routerLink="/announcements"
     matRipple
     [matRippleCentered]="true"
@@ -7,10 +8,16 @@
     [matRippleRadius]="10"
     [matRippleColor]="color">
     <!--Dodawanie nowego ogłoszenia-->
-    <h2>Tytuł</h2>
+    <h2>Dodaj ogłoszenie</h2>
     <form action="" method="get">
-    <input type="text" [(ngModel)]="announcement.title" name="title" id="title" placeholder="Tytuł Ogłoszenia" required>
-    <h2>Treść</h2>
-    <textarea id="content" [(ngModel)]="announcement.content" name="content" placeholder="Treść Ogłoszenia " rows="10"></textarea> <br>
-    <button type="submit" (click)="addAnnouncement()">Dodaj</button></form>
-</div>
+        <mat-form-field class="formfield">
+            <mat-label>Temat</mat-label>
+            <input matInput>
+          </mat-form-field>         
+        <mat-form-field class="formfield">
+          <mat-label>Treść ogłoszenia</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field><br>        
+      <button mat-raised-button color="primary" type="submit">Dodaj</button>
+    </form>
+</div></div>
