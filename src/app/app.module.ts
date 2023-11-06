@@ -54,6 +54,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { ElectionsComponent } from './elections/elections.component';
 import {NgFor} from '@angular/common';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { UserlistComponent } from './userlist/userlist.component';
 
 
 @NgModule({
@@ -86,7 +87,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
       HomeworksComponent,
       AddHomeworkComponent,
       HomeworkComponent,
-      ElectionsComponent
+      ElectionsComponent,
+      UserlistComponent
   ],
   imports: [
     BrowserModule,
