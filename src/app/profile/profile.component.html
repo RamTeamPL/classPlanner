@@ -1,19 +1,21 @@
-<div id="bgacc">
+<div id="container">
+    <div id="bgacc">
 
-    <img class="profileimg" src="assets/img/icons8-male-user-96.png" width="100px" height="100px" alt="IkonaProfilu">
+        <img class="profileimg" src="assets/img/icons8-male-user-96.png" width="100px" height="100px" alt="IkonaProfilu">
 
-    <div class="allinfo">
-        
-        <div class="user">{{member.name}} {{member.surname}} </div> <!--Imie i nazwisko-->
-        
-        <div class="class"><p class="text">Klasa:</p><span>{{classGroup.name}}</span></div> <!--Klasa-->
-        <div class="mail"><p class="text">E-mail:</p><span>{{member.email}}</span></div> <!--Adres e-mail-->
-        <div class="role"><p class="text">Rola:</p><span>{{role}}</span></div> <!--Adres e-mail-->
+        <div class="allinfo">
+            
+            <div class="user">{{member.name}} {{member.surname}} </div> <!--Imie i nazwisko-->
+            
+            <div class="class"><p class="text">Klasa:</p><span>{{classGroup.name}}</span></div> <!--Klasa-->
+            <div class="mail"><p class="text">E-mail:</p><span>{{member.email}}</span></div> <!--Adres e-mail-->
+            <div class="role"><p class="text">Rola:</p><span>{{role}}</span></div> <!--Adres e-mail-->
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <section>
+            <button routerLink="../login" mat-flat-button color="primary">Wyloguj się</button>
+        </section>
     </div>
-
-    <mat-divider></mat-divider>
-
-    <section>
-        <button routerLink="../login" mat-flat-button color="primary">Wyloguj się</button>
-    </section>
 </div>
