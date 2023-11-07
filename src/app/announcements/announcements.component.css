@@ -1,6 +1,9 @@
 .box:first-child{
     margin-top: 5%;
 }
+#container{
+    padding-bottom: 80px;
+}
 .box{
     width: 90%;
     height: auto;
@@ -32,6 +35,8 @@ p{
     color: rgb(246, 246, 246);
     font-size: large;
     display: block;
+    text-align: justify;
+    margin: 10px;
 }
 
 .active-add{
