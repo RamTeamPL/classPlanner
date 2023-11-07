@@ -57,6 +57,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { UserlistComponent } from './userlist/userlist.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -104,7 +105,7 @@ import { UserlistComponent } from './userlist/userlist.component';
     MatRippleModule,
     MatSelectModule,
     MatRadioModule,
-    [MatCheckboxModule, NgFor, FormsModule]
+    [MatCheckboxModule, NgFor, FormsModule],
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.css']
+  styleUrls: ['./settings.component.css'],
+  providers: [InAppBrowser]
 })
 export class SettingsComponent {
   centered = false;
@@ -12,4 +14,10 @@ export class SettingsComponent {
   color = "rgba(114, 114, 114, 0.495)";
   checkbox = "primary"
   panelOpenState = false;
+
+  constructor(private inAppBrowser: InAppBrowser) {}
+
+  openExternalLink(url: string) {
+    const browser = this.inAppBrowser.create(url, '_system');
+  }
 }
