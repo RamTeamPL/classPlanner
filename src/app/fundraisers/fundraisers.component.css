@@ -37,7 +37,7 @@ img:first-child{
     position: sticky;
 }
 
-.person{
+label{
     background-color: rgba(55, 55, 96, 0.566);
     width: 46%;
     display: inline-block;
