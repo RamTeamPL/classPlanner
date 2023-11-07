@@ -23,6 +23,8 @@
     "@capacitor/android": "^5.5.1",
     "@capacitor/core": "^5.5.1",
     "@capacitor/ios": "^5.5.1",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/in-app-browser": "^5.36.0",
     "@ngx-translate/core": "^14.0.0",
     "rxjs": "~7.8.0",
     "stream-chat": "^8.14.0",
