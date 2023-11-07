@@ -22,16 +22,7 @@ ngOnInit() {
      
   };
 
-    // ngOnInit() {
-    //   let response = this.http.get("http://"+this.spring.getspringBootIp()+":8080/getGroupMembersByMemberId/" + this.spring.getMemberId());
-    //   response.subscribe((data:any) =>{
-    //      this.members = data
-    //      this.members.forEach(member => {
-    //       let response3 = this.http.get("http://"+this.spring.getspringBootIp()+":8080/getRoleIdByMemberId/" + member.id);
-    //       response3.subscribe((data) =>this.role = this.role + data);
-    //      });
-         
-    //     });
+    
   
 }
 

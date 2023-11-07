@@ -19,8 +19,6 @@ public class ClassGroup {
     @OneToMany
     @JoinColumn(name = "groupId", updatable = false, insertable = false)
     private List<GroupMember> groupMembers;
-//    @OneToMany
-//    @JoinColumn(name = "groupId", updatable = false, insertable = false)
-//    private List<Request> requests;
+
 }
 

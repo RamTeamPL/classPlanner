@@ -23,8 +23,8 @@ export class AddAnnouncementComponent {
 
   constructor(private http: HttpClient, private spring:SpringbootService) { }
 
-  ngOnInit() { //nie komentować metody
-    let response = this.http.get("http://localhost:8080/announcementByMemberId/" + this.spring.getMemberId());           //do testów zakomentować ciało
+  ngOnInit() {
+    let response = this.http.get("http://localhost:8080/announcementByMemberId/" + this.spring.getMemberId());
     response.subscribe((data) => this.announcements = data);
  }
 
