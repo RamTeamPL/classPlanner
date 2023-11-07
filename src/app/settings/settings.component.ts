@@ -10,5 +10,6 @@ export class SettingsComponent {
   disabled = false;
   unbounded = false;
   color = "rgba(114, 114, 114, 0.495)";
+  checkbox = "primary"
   panelOpenState = false;
 }
