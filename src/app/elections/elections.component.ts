@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'app-elections',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./elections.component.css']
 })
 export class ElectionsComponent {
-  color="primary"
+  color: ThemePalette = "primary";
 }
